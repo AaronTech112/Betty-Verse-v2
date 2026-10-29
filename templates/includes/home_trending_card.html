@@ -1,0 +1,37 @@
+{% load static %}
+<article class="home-trending-card package-card"
+   data-season="{{ package.tags }}"
+   data-package-id="{{ package.slug }}"
+   data-package-backend-id="{{ package.packageId }}"
+   data-package-slug="{{ package.slug }}"
+   data-package-name="{{ package.name }}"
+   data-package-category="{{ package.category }}"
+   data-package-price="{{ package.price }}"
+   data-package-base-price="{{ package.basePrice }}"
+   data-package-image="{{ package.image }}"
+   data-package-image2="{% if package.images|length > 1 %}{{ package.images.1 }}{% endif %}"
+   data-package-image3="{% if package.images|length > 2 %}{{ package.images.2 }}{% endif %}"
+   data-package-slide-images='{{ package.slideImagesJson|escapejs }}'
+   data-package-summary="{{ package.summary }}">
+   <div class="package-media">
+      {% if package.image %}
+      <img src="{{ package.image }}" alt="{{ package.name }}">
+      {% else %}
+      <img src="{% static 'images/logo.png' %}" alt="{{ package.name }}">
+      {% endif %}
+      <span class="package-label">
+         {% if package.filterCategory == "anniversary" or package.filterCategory == "surprise" %}
+         <i class="fa fa-heart-o" aria-hidden="true"></i>
+         {% else %}
+         <i class="fa fa-gift" aria-hidden="true"></i>
+         {% endif %}
+         {{ package.category }}
+      </span>
+   </div>
+   <div class="package-card-top">
+      <h3>{{ package.name }}</h3>
+      <span class="package-price">&pound;{{ package.basePrice|floatformat:"-2" }}</span>
+   </div>
+   <p class="package-summary">{{ package.summary }}</p>
+   <ul class="package-highlights"></ul>
+</article>

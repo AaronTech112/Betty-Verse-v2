@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email | BettyVerse</title>
+    <link rel="stylesheet" href="{% static 'css/login_style.css' %}">
+    <link rel="icon" href="{% static 'images/bookmark.jpeg' %}" type="image/jpeg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/bookmark.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'images/bookmark.png' %}">
+    <meta property="og:image" content="{% static 'images/bookmark.jpeg' %}">
+    <meta name="twitter:image" content="{% static 'images/bookmark.jpeg' %}">
+    <meta name="apple-mobile-web-app-title" content="BettyVerse">
+</head>
+<body class="auth-page">
+    <div class="auth-shell signup-layout">
+        <div class="auth-brand-panel">
+            <a class="auth-home-link" href="{% url 'home' %}">Back to Website</a>
+            <div class="auth-brand-mark"><img src="{% static 'images/logo.png' %}" alt="BettyVerse logo"></div>
+            <span class="auth-kicker"><i class='bx bx-envelope'></i>Email Verification</span>
+            <h1>Verify your email.</h1>
+            <p>Enter the 6-digit code we sent to <strong>{{ verification_email }}</strong>.</p>
+            <ul class="auth-feature-list">
+                <li>Protect your account</li>
+                <li>Activate your dashboard access</li>
+            </ul>
+        </div>
+        <div class="auth-form-panel">
+            <form class="auth-form" method="post">
+                {% csrf_token %}
+                <span class="auth-section-label"><i class='bx bx-check-shield'></i>Verify</span>
+                <h2>Enter code</h2>
+                <p class="auth-helper">Your code expires in 15 minutes.</p>
+                {% if messages %}
+                {% for message in messages %}
+                <p class="auth-helper">{{ message }}</p>
+                {% endfor %}
+                {% endif %}
+                {{ form.non_field_errors }}
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email address" value="{{ form.email.value|default:verification_email }}" required autocomplete="email">
+                    <i class='bx bxs-envelope'></i>
+                    {{ form.email.errors }}
+                </div>
+                <div class="input-box">
+                    <input type="text" name="code" placeholder="6-digit verification code" value="{{ form.code.value|default_if_none:'' }}" required inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}">
+                    <i class='bx bx-key'></i>
+                    {{ form.code.errors }}
+                </div>
+                <button type="submit" class="btn">Verify Email</button>
+                <button type="submit" class="btn" name="action" value="resend">Resend Code</button>
+                <p class="switch-text">Already verified? <a href="{% url 'login' %}">Log in instead</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="{% static 'js/login_script.js' %}"></script>
+</body>
+</html>

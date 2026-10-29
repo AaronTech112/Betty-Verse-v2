@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Package Details</title>
+      <meta name="description" content="View BettyVerse package details, add-ons, and pricing.">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <link rel="stylesheet" href="{% static 'css/packages.css' %}">
+      <link rel="icon" href="{% static 'images/bookmark.jpeg' %}" type="image/jpeg">
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/bookmark.png' %}">
+      <link rel="apple-touch-icon-precomposed" href="{% static 'images/bookmark.png' %}">
+      <meta property="og:image" content="images/bookmark.jpeg">
+      <meta name="twitter:image" content="images/bookmark.jpeg">
+      <meta name="apple-mobile-web-app-title" content="BettyVerse">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="packages-page package-detail-page">
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand brand-mark" href="{% url 'home' %}" aria-label="BettyVerse home"><span class="brand-mark__icon" aria-hidden="true"><img src="{% static 'images/logo.png' %}" alt=""></span><span class="brand-mark__text"><strong>Betty</strong> Verse</span></a>
+               <a class="mobile_cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                  <span class="mobile_cart_icon" aria-hidden="true"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  <span class="cart_count" data-cart-count aria-live="polite">0</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="{% url 'packages' %}">Packages</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'booking' %}">Booking</a></li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                              {% csrf_token %}
+                     <a class="cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                        <span class="cart_link_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="cart_link_text">Cart</span>
+                        <span class="cart_count" data-cart-count aria-live="polite">0</span>
+                     </a>
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+
+      <main class="package-detail-shell">
+         <section class="package-detail-empty" data-package-detail-empty hidden>
+            <div class="container">
+               <div class="package-detail-empty-panel">
+                  <span class="section-tag"><i class="fa fa-gift" aria-hidden="true"></i>Package Details</span>
+                  <h1>Choose a package to view its details.</h1>
+                  <p>Open a package from the packages page so we can show its images, add-ons, and pricing.</p>
+                  <a class="hero-btn primary" href="{% url 'packages' %}">Browse Packages</a>
+               </div>
+            </div>
+         </section>
+
+         <section class="package-detail-product" data-package-detail-page>
+            <div class="container">
+               <a class="package-detail-back-link" href="{% url 'packages' %}"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to packages</a>
+               <article class="package-detail-card package-card" data-detail-card>
+                  <div class="package-detail-page-grid">
+                     <div class="package-detail-page-gallery">
+                        <div class="package-detail-main-image-wrap">
+                           <button class="package-detail-main-image-button" type="button" data-detail-lightbox-open aria-label="Open package image">
+                              <img data-detail-main-image src="" alt="">
+                           </button>
+                        </div>
+                        <div class="package-detail-page-thumbs" data-detail-thumbs aria-label="Package images"></div>
+                     </div>
+                     <div class="package-detail-page-info">
+                        <span class="package-detail-category" data-detail-category></span>
+                        <h1 data-detail-title>Package details</h1>
+                        <div class="package-detail-page-price" data-detail-price>&pound;0</div>
+                        <p class="package-detail-page-summary" data-detail-summary></p>
+                        <ul class="package-detail-page-highlights" data-detail-highlights></ul>
+                        <div class="package-detail-price-note">
+                           <span>Base price</span>
+                           <strong data-detail-base-price>&pound;0</strong>
+                        </div>
+                        <div class="package-detail-page-addons">
+                           <p class="package-details-title">Optional add-ons</p>
+                           <p class="package-detail-no-addons" data-detail-no-addons hidden>No optional add-ons are listed for this package.</p>
+                           <div class="package-addon-list" data-detail-addons></div>
+                           <div class="package-addon-summary"><span>Add-on total</span><strong data-detail-addon-total>&pound;0</strong></div>
+                        </div>
+                        <div class="package-detail-page-actions">
+                           <button class="add-cart" type="button" data-add-to-cart>Add to Cart</button>
+                           <a class="details-toggle" href="booking.html?package=1" data-start-booking>Start Booking</a>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </section>
+      </main>
+
+      <div class="package-detail-lightbox" data-detail-lightbox hidden aria-hidden="true">
+         <button class="package-detail-lightbox-backdrop" type="button" data-detail-lightbox-close aria-label="Close image preview"></button>
+         <div class="package-detail-lightbox-frame" role="dialog" aria-modal="true" aria-label="Package image preview">
+            <button class="package-detail-lightbox-close" type="button" data-detail-lightbox-close aria-label="Close image preview">&times;</button>
+            <img data-detail-lightbox-image src="" alt="">
+         </div>
+      </div>
+
+      <footer class="site_footer margin_top90">
+         <div class="container">
+            <div class="footer_bottom">
+               <p class="copyright_text">2026 BettyVerse. Crafted for unforgettable celebrations.</p>
+               <ul class="footer_bottom_links">
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'services' %}">Services</a></li>
+                  <li><a href="{% url 'booking' %}">Booking</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/package-detail.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/cart.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>

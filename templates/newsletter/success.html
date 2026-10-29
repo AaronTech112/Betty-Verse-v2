@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription | BettyVerse</title>
+    <link rel="stylesheet" href="{% static 'css/login_style.css' %}">
+    <link rel="icon" href="{% static 'images/bookmark.jpeg' %}" type="image/jpeg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="auth-page">
+    <div class="auth-shell signup-layout">
+        <div class="auth-brand-panel">
+            <a class="auth-home-link" href="{% url 'home' %}">Back to Website</a>
+            <div class="auth-brand-mark"><img src="{% static 'images/logo.png' %}" alt="BettyVerse logo"></div>
+            <span class="auth-kicker"><i class='bx bx-envelope-open'></i>Newsletter</span>
+            <h1>
+                {% if subscription_status == "already-subscribed" %}
+                You are already subscribed.
+                {% else %}
+                Welcome to the newsletter.
+                {% endif %}
+            </h1>
+            <p>
+                {% if subscriber_email %}
+                {{ subscriber_email }}
+                {% else %}
+                Your email address
+                {% endif %}
+                {% if subscription_status == "already-subscribed" %}
+                is already on the BettyVerse newsletter list.
+                {% else %}
+                has been added to the BettyVerse newsletter.
+                {% endif %}
+            </p>
+            <ul class="auth-feature-list">
+                <li>Offers and updates</li>
+                <li>Styling trends and new launches</li>
+            </ul>
+        </div>
+        <div class="auth-form-panel">
+            <div class="auth-form">
+                <span class="auth-section-label"><i class='bx bx-check-circle'></i>Confirmed</span>
+                <h2>Subscription complete</h2>
+                <p class="auth-helper">
+                    {% if subscription_status == "already-subscribed" %}
+                    We did not create a duplicate subscription.
+                    {% else %}
+                    A welcome confirmation email has been sent to your inbox.
+                    {% endif %}
+                </p>
+                <a href="{{ return_to }}" class="btn" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;">Return to previous page</a>
+                <p class="switch-text">Want to explore more? <a href="{% url 'home' %}">Go to homepage</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

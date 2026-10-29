@@ -1,0 +1,259 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Services</title>
+      <meta name="keywords" content="BettyVerse services">
+      <meta name="description" content="Explore BettyVerse services for gifting, surprise setups, decor styling, and celebration coordination.">
+      <meta name="author" content="BettyVerse">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <link rel="icon" href="{% static 'images/bookmark.jpeg' %}" type="image/jpeg">
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/bookmark.png' %}">
+      <link rel="apple-touch-icon-precomposed" href="{% static 'images/bookmark.png' %}">
+      <meta property="og:image" content="images/bookmark.jpeg">
+      <meta name="twitter:image" content="images/bookmark.jpeg">
+      <meta name="apple-mobile-web-app-title" content="BettyVerse">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="page-shell">
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand brand-mark" href="{% url 'home' %}" aria-label="BettyVerse home"><span class="brand-mark__icon" aria-hidden="true"><img src="{% static 'images/logo.png' %}" alt=""></span><span class="brand-mark__text"><strong>Betty</strong> Verse</span></a>
+               <a class="mobile_cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                  <span class="mobile_cart_icon" aria-hidden="true"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  <span class="cart_count" data-cart-count aria-live="polite">0</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'packages' %}" id="packagesDropdown" role="button" aria-haspopup="true" aria-expanded="false">Packages</a>
+                        <div class="dropdown-menu" aria-labelledby="packagesDropdown">
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=birthday">Birthday</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=custom-request">Custom Request</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=kids-birthday">Kids Birthday</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=betty-confetti">Betty And Confetti</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=car-boot">Car Boot</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=surprise">Surprise By Betty At</a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=university">University</a>
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=workplace">Workplace</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=anniversary">Anniversary</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-choice">By Choice</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=anniversary">Anniversary Decorations</a>
+                                    <div class="dropdown-menu">
+                                                                              <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-home">Decoration At Home</a>
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-car">Car Boot Decoration</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=surprise">Your Occasion</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=occasion-choice">By Choice</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=valentine">Valentine's Day</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=baby-shower">Baby Shower</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=proposal">Proposal</a>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=festival">Festival</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=christmas">Christmas Decorations</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=new-year">New Year</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=easter">Easter</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item active"><a class="nav-link" href="#">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'booking' %}">Booking</a></li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                              {% csrf_token %}
+                     <div class="search-container">
+                        <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                        <div class="fa fa-search form-control-feedback" onclick="toggleSearch()"></div>
+                     </div>
+                     <a class="cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                        <span class="cart_link_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="cart_link_text">Cart</span>
+                        <span class="cart_count" data-cart-count aria-live="polite">0</span>
+                     </a>
+                     {% if user.is_authenticated %}
+                     <div class="login_bt"><a href="{% url 'dashboard' %}">My Account <span style="color: #ffffff;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                     {% else %}
+                     <div class="login_bt"><a href="{% url 'login' %}">Login <span style="color: #ffffff;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                     {% endif %}
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <section class="page_hero">
+         <div class="container">
+            <span class="page_kicker"><span class="icon-inline" aria-hidden="true"><i class="fa fa-briefcase" aria-hidden="true"></i></span><span class="eyebrow-copy">Our Services</span></span>
+            <h1 class="page_title">Flexible support for gifting and surprise planning.</h1>
+            <p class="page_intro">For individuals, couples, and brands who want clean, polished celebration setups.</p>
+         </div>
+      </section>
+      <section class="content_section">
+         <div class="container">
+            <div class="section_heading center_heading">
+               <span class="content_eyebrow"><span class="icon-inline" aria-hidden="true"><i class="fa fa-cogs" aria-hidden="true"></i></span><span class="eyebrow-copy">Service Areas</span></span>
+               <h2 class="content_title">Everything you need for a standout celebration.</h2>
+            </div>
+            <div class="row">
+               <div class="col-md-6 col-lg-4 mb-4"><div class="service_card"><span class="card-icon"><i class="fa fa-gift" aria-hidden="true"></i></span><h3>Surprise Gift Curation</h3><p>Curated gifts, premium wrapping, and clean presentation.</p></div></div>
+               <div class="col-md-6 col-lg-4 mb-4"><div class="service_card"><span class="card-icon"><i class="fa fa-birthday-cake" aria-hidden="true"></i></span><h3>Birthday Styling</h3><p>Creative decor and setup for memorable birthdays.</p></div></div>
+               <div class="col-md-6 col-lg-4 mb-4"><div class="service_card"><span class="card-icon"><i class="fa fa-heart" aria-hidden="true"></i></span><h3>Anniversary Decor</h3><p>Warm, elegant styling for romantic spaces.</p></div></div>
+               <div class="col-md-6 col-lg-4 mb-4"><div class="service_card"><span class="card-icon"><i class="fa fa-diamond" aria-hidden="true"></i></span><h3>Proposal Planning</h3><p>Beautiful proposal setups with discreet coordination.</p></div></div>
+               <div class="col-md-6 col-lg-4 mb-4"><div class="service_card"><span class="card-icon"><i class="fa fa-star" aria-hidden="true"></i></span><h3>Festival Packages</h3><p>Seasonal decor and gifting for festive moments.</p></div></div>
+               <div class="col-md-6 col-lg-4 mb-4"><div class="service_card"><span class="card-icon"><i class="fa fa-building-o" aria-hidden="true"></i></span><h3>Corporate Surprises</h3><p>Workplace gifting and celebration styling.</p></div></div>
+            </div>
+         </div>
+      </section>
+      <section class="feature_band alt_band">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6">
+                  <h2 class="band_title">Why our process feels easy.</h2>
+                  <p class="band_text">Clear communication, polished execution, and consistent styling.</p>
+               </div>
+               <div class="col-lg-6">
+                  <div class="band_list_card">
+                     <ul>
+                        <li>Clear package options</li>
+                        <li>Fast booking response</li>
+                        <li>Reliable setup timing</li>
+                        <li>Refined premium presentation</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="site_footer margin_top90">
+         <div class="container">
+            <div class="footer_highlight_bar">
+               <div class="footer_highlight_item">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                  <div>
+                     <strong>Fast Setup Slots</strong>
+                     <span>Priority booking windows for last-minute celebrations.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <div>
+                     <strong>UK-Wide Coverage</strong>
+                     <span>From intimate home reveals to destination event styling.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  <div>
+                     <strong>Direct Support</strong>
+                     <span>Planning guidance from brief to final reveal timing.</span>
+                  </div>
+               </div>
+            </div>
+            <div class="footer_top">
+               <div class="footer_brand_column">
+                  <a class="footer_brand" href="{% url 'home' %}">
+                     <img src="{% static 'images/logo.png' %}" alt="BettyVerse logo">
+                     <span>BettyVerse</span>
+                  </a>
+                  <p class="footer_copy">Premium surprise styling, thoughtful gifting, and celebration planning for clients across the UK.</p>
+                  <p class="footer_service_note">Based in Dunfermline, Scotland and available for bookings anywhere in the UK.</p>
+                  <div class="footer_newsletter">
+                     <h3 class="footer_title">Newsletter</h3>
+                     <p class="footer_newsletter_copy">Subscribe for offers, styling trends, and new package launches.</p>
+                     <form class="footer_newsletter_form" method="post" novalidate>
+                              {% csrf_token %}
+                        <input type="email" class="footer_newsletter_input" placeholder="Enter your email address" aria-label="Email address">
+                        <button class="footer_newsletter_button" type="button">Subscribe</button>
+                     </form>
+                  </div>
+                  <div class="footer_social_links" aria-label="BettyVerse social links">
+                     <a href="https://www.tiktok.com/@bettyverse_" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.44h-3.2v12.58a2.77 2.77 0 1 1-1.9-2.63V8.96a5.98 5.98 0 1 0 5.1 5.91V8.5a8.02 8.02 0 0 0 4.68 1.5V6.69h-.91z"></path>
+                        </svg>
+                     </a>
+                     <a href="https://www.instagram.com/bettyverse_/" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.snapchat.com/add/bettyverse" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                  </div>               </div>
+               <div class="footer_links_column">
+                  <h3 class="footer_title">Useful Links</h3>
+                  <ul class="footer_links">
+                     <li><a href="{% url 'home' %}">Home</a></li>
+                     <li><a href="{% url 'packages' %}">Packages</a></li>
+                     <li><a href="{% url 'services' %}">Services</a></li>
+                     <li><a href="{% url 'booking' %}">Booking</a></li>
+                     <li><a href="{% url 'cart' %}">Cart</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Occasions</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="{% url 'packages' %}?filter=birthday">Birthday</a></li>
+                     <li><a href="{% url 'packages' %}?filter=anniversary">Anniversary</a></li>
+                     <li><a href="{% url 'packages' %}?filter=surprise">Proposal &amp; Surprise</a></li>
+                     <li><a href="{% url 'packages' %}?filter=festival">Festive Moments</a></li>
+                  </ul>
+               </div>
+               <div class="footer_contact_column">
+                  <h3 class="footer_title">Contact Details</h3>
+                  <ul class="footer_contact_list">
+                     <li><span>Address</span><strong>59 Don Road, Dunfermline, Scotland, UK</strong></li>
+                     <li><span>Postcode</span><strong>KY11 4NH</strong></li>
+                     <li><span>Phone</span><a href="tel:07467036297">07467036297</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Need Help?</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="{% url 'booking' %}">Book a Consultation</a></li>
+                     <li><a href="{% url 'blog' %}">Planning Tips</a></li>
+                     <li><a href="{% url 'about' %}">About BettyVerse</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_bottom">
+               <p class="copyright_text">2026 BettyVerse. Crafted for unforgettable celebrations.</p>
+               <ul class="footer_bottom_links">
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'services' %}">Services</a></li>
+                  <li><a href="{% url 'booking' %}">Booking</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/cart.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>

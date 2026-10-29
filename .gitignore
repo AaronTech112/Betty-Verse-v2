@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+*.gz
+staticfiles_build/
+.DS_Store
+.env
+venv/
+env/
+.venv/

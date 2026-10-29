@@ -1,0 +1,458 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>My Account | BettyVerse</title>
+      <meta name="keywords" content="BettyVerse account dashboard">
+      <meta name="description" content="Manage your BettyVerse profile settings, orders, bookings, and saved addresses from one dashboard.">
+      <meta name="author" content="BettyVerse">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <link rel="icon" href="{% static 'images/bookmark.jpeg' %}" type="image/jpeg">
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/bookmark.png' %}">
+      <link rel="apple-touch-icon-precomposed" href="{% static 'images/bookmark.png' %}">
+      <meta property="og:image" content="images/bookmark.jpeg">
+      <meta name="twitter:image" content="images/bookmark.jpeg">
+      <meta name="apple-mobile-web-app-title" content="BettyVerse">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="page-shell">
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand brand-mark" href="{% url 'home' %}" aria-label="BettyVerse home"><span class="brand-mark__icon" aria-hidden="true"><img src="{% static 'images/logo.png' %}" alt=""></span><span class="brand-mark__text"><strong>Betty</strong> Verse</span></a>
+               <a class="mobile_cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                  <span class="mobile_cart_icon" aria-hidden="true"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  <span class="cart_count" data-cart-count aria-live="polite">0</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'packages' %}" id="packagesDropdown" role="button" aria-haspopup="true" aria-expanded="false">Packages</a>
+                        <div class="dropdown-menu" aria-labelledby="packagesDropdown">
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=birthday">Birthday</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=custom-request">Custom Request</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=kids-birthday">Kids Birthday</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=betty-confetti">Betty And Confetti</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=car-boot">Car Boot</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=surprise">Surprise By Betty At</a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=university">University</a>
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=workplace">Workplace</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=anniversary">Anniversary</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-choice">By Choice</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=anniversary">Anniversary Decorations</a>
+                                    <div class="dropdown-menu">
+                                                                              <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-home">Decoration At Home</a>
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-car">Car Boot Decoration</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=surprise">Your Occasion</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=occasion-choice">By Choice</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=valentine">Valentine's Day</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=baby-shower">Baby Shower</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=proposal">Proposal</a>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=festival">Festival</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=christmas">Christmas Decorations</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=new-year">New Year</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=easter">Easter</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'booking' %}">Booking</a></li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                              {% csrf_token %}
+                     <div class="search-container">
+                        <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                        <div class="fa fa-search form-control-feedback" onclick="toggleSearch()"></div>
+                     </div>
+                     <a class="cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                        <span class="cart_link_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="cart_link_text">Cart</span>
+                        <span class="cart_count" data-cart-count aria-live="polite">0</span>
+                     </a>
+                     <div class="login_bt"><a href="user-dashboard.html">Account <span style="color: #ffffff;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+
+      <div data-account-dashboard-root>
+         <section class="page_hero">
+            <div class="container">
+               <span class="page_kicker"><i class="fa fa-user-circle-o icon-inline" aria-hidden="true"></i>My Account</span>
+               <h1 class="page_title">Manage your profile, orders, and bookings in one place.</h1>
+               <p class="page_intro">Simple account updates from one clean dashboard.</p>
+            </div>
+         </section>
+
+         <section class="content_section account-dashboard-section">
+            <div class="container">
+               <div class="dashboard-alert is-info" data-dashboard-alert hidden></div>
+               <div class="account-summary-panel">
+                  <div class="account-summary-top">
+                     <div class="account-summary-main">
+                        <div class="account-avatar account-avatar--summary">
+                           <img src="{% static 'images/logo.png' %}" alt="Profile picture" data-dashboard-avatar>
+                        </div>
+                        <div class="account-summary-copy">
+                           <h2 data-dashboard-user-name>BettyVerse Client</h2>
+                           <div class="account-summary-meta">
+                              <span class="account-summary-pill"><i class="fa fa-diamond" aria-hidden="true"></i> Tier: <strong data-dashboard-tier>Standard</strong></span>
+                              <span class="account-summary-pill"><i class="fa fa-calendar-o" aria-hidden="true"></i> Member since <strong data-dashboard-member-since>-</strong></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="account-summary-actions">
+                        <span>Today: <strong data-dashboard-today>-</strong></span>
+                        <button type="button" class="hero-btn secondary" data-dashboard-logout>Log Out</button>
+                     </div>
+                  </div>
+                  <div class="account-summary-contact-row">
+                     <div class="account-summary-contact-item">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <div>
+                           <small>Email</small>
+                           <span data-dashboard-user-email>client@bettyverse.com</span>
+                        </div>
+                     </div>
+                     <div class="account-summary-contact-item">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div>
+                           <small>Phone</small>
+                           <span data-dashboard-phone>+234 800 000 0000</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="account-metrics-grid">
+                  <article class="account-metric-card account-metric-card--combined">
+                     <div class="account-metric-list">
+                        <div class="account-metric-item">
+                           <div class="account-metric-main">
+                              <span class="account-metric-icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+                              <p class="account-metric-label">Total orders</p>
+                           </div>
+                           <strong data-dashboard-orders-count>0</strong>
+                        </div>
+                        <div class="account-metric-item">
+                           <div class="account-metric-main">
+                              <span class="account-metric-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                              <p class="account-metric-label">Active bookings</p>
+                           </div>
+                           <strong data-dashboard-active-bookings-count>0</strong>
+                        </div>
+                        <div class="account-metric-item">
+                           <div class="account-metric-main">
+                              <span class="account-metric-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                              <p class="account-metric-label">Default address on file</p>
+                           </div>
+                           <strong data-dashboard-default-address-count>0</strong>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+
+               <div class="dashboard-layout">
+                  <aside class="dashboard-nav-card" role="tablist" aria-label="Account sections">
+                     <button class="dashboard-nav-item is-active" type="button" role="tab" aria-selected="true" data-dashboard-tab-target="overview"><i class="fa fa-home" aria-hidden="true"></i> Overview</button>
+                     <button class="dashboard-nav-item" type="button" role="tab" aria-selected="false" data-dashboard-tab-target="profile"><i class="fa fa-user" aria-hidden="true"></i> Profile Settings</button>
+                     <button class="dashboard-nav-item" type="button" role="tab" aria-selected="false" data-dashboard-tab-target="orders"><i class="fa fa-shopping-bag" aria-hidden="true"></i> My Orders</button>
+                     <button class="dashboard-nav-item" type="button" role="tab" aria-selected="false" data-dashboard-tab-target="bookings"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> My Bookings</button>
+                     <button class="dashboard-nav-item" type="button" role="tab" aria-selected="false" data-dashboard-tab-target="addresses"><i class="fa fa-map-marker" aria-hidden="true"></i> Addresses</button>
+                     <button class="dashboard-nav-item" type="button" role="tab" aria-selected="false" data-dashboard-tab-target="security"><i class="fa fa-lock" aria-hidden="true"></i> Security</button>
+                  </aside>
+
+                  <div class="dashboard-content-card">
+                     <section class="dashboard-panel" data-dashboard-panel="overview">
+                        <div class="dashboard-panel-head">
+                           <span class="content_eyebrow"><i class="fa fa-area-chart icon-inline" aria-hidden="true"></i>Overview</span>
+                           <h2 class="content_title">Recent activity</h2>
+                        </div>
+                        <div class="dashboard-overview-grid">
+                           <div class="dashboard-overview-col">
+                              <h3>Recent Orders</h3>
+                              <div class="account-record-list" data-overview-orders-list></div>
+                           </div>
+                           <div class="dashboard-overview-col">
+                              <h3>Upcoming Bookings</h3>
+                              <div class="account-record-list" data-overview-bookings-list></div>
+                           </div>
+                        </div>
+                     </section>
+
+                     <section class="dashboard-panel" data-dashboard-panel="profile" hidden>
+                        <div class="dashboard-panel-head">
+                           <span class="content_eyebrow"><i class="fa fa-id-card-o icon-inline" aria-hidden="true"></i>Profile</span>
+                           <h2 class="content_title">Profile settings</h2>
+                        </div>
+                        <div class="account-profile-media">
+                           <div class="account-avatar account-avatar--profile">
+                              <img src="{% static 'images/logo.png' %}" alt="Profile picture preview" data-profile-avatar-preview>
+                           </div>
+                           <div class="account-profile-media-copy">
+                              <h3>Profile picture</h3>
+                              <p>Upload a personal photo for your account. For this demo, the BettyVerse logo is the default profile picture.</p>
+                              <div class="account-profile-media-actions">
+                                 <label class="hero-btn secondary account-avatar-upload">
+                                    <input type="file" accept="image/*" data-profile-avatar-input>
+                                    <span>Change Picture</span>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <form class="account-form-grid" data-profile-form>
+                           <label>
+                              <span>Full Name</span>
+                              <input type="text" name="name" required>
+                           </label>
+                           <label>
+                              <span>Email Address</span>
+                              <input type="email" name="email" required>
+                           </label>
+                           <label>
+                              <span>Phone Number</span>
+                              <input type="text" name="phone" required>
+                           </label>
+                           <label>
+                              <span>Preferred Contact</span>
+                              <select name="preferredContact">
+                                 <option value="email">Email</option>
+                                 <option value="phone">Phone</option>
+                                 <option value="whatsapp">WhatsApp</option>
+                              </select>
+                           </label>
+                           <label>
+                              <span>Birthday</span>
+                              <input type="date" name="birthday">
+                           </label>
+                           <label>
+                              <span>Event Preferences</span>
+                              <input type="text" name="eventPreferences" placeholder="Birthday, Anniversary, Proposal">
+                           </label>
+                           <label class="is-full">
+                              <span>Notes for Your Planner</span>
+                              <textarea name="notes" rows="5" placeholder="Delivery preferences, decoration style, color themes..."></textarea>
+                           </label>
+                           <div class="is-full account-form-actions">
+                              <button type="submit" class="hero-btn primary">Save Profile</button>
+                           </div>
+                        </form>
+                     </section>
+
+                     <section class="dashboard-panel" data-dashboard-panel="orders" hidden>
+                        <div class="dashboard-panel-head">
+                           <span class="content_eyebrow"><i class="fa fa-shopping-bag icon-inline" aria-hidden="true"></i>Orders</span>
+                           <h2 class="content_title">My orders</h2>
+                        </div>
+                        <div class="account-record-list" data-orders-list></div>
+                     </section>
+
+                     <section class="dashboard-panel" data-dashboard-panel="bookings" hidden>
+                        <div class="dashboard-panel-head">
+                           <span class="content_eyebrow"><i class="fa fa-calendar-check-o icon-inline" aria-hidden="true"></i>Bookings</span>
+                           <h2 class="content_title">My bookings</h2>
+                        </div>
+                        <div class="account-record-list" data-bookings-list></div>
+                     </section>
+
+                     <section class="dashboard-panel" data-dashboard-panel="addresses" hidden>
+                        <div class="dashboard-panel-head">
+                           <span class="content_eyebrow"><i class="fa fa-map-marker icon-inline" aria-hidden="true"></i>Addresses</span>
+                           <h2 class="content_title">Saved addresses</h2>
+                        </div>
+                        <div class="account-address-layout">
+                           <form class="account-form-grid account-address-form" data-address-form>
+                              <label>
+                                 <span>Label</span>
+                                 <input type="text" name="label" placeholder="Home, Office, Venue" required>
+                              </label>
+                              <label>
+                                 <span>Recipient Name</span>
+                                 <input type="text" name="recipient" required>
+                              </label>
+                              <label>
+                                 <span>Phone</span>
+                                 <input type="text" name="phone" required>
+                              </label>
+                              <label>
+                                 <span>Address Line 1</span>
+                                 <input type="text" name="line1" required>
+                              </label>
+                              <label>
+                                 <span>Address Line 2</span>
+                                 <input type="text" name="line2">
+                              </label>
+                              <label>
+                                 <span>City</span>
+                                 <input type="text" name="city" required>
+                              </label>
+                              <label>
+                                 <span>Region / State</span>
+                                 <input type="text" name="region" required>
+                              </label>
+                              <label>
+                                 <span>Postcode</span>
+                                 <input type="text" name="postcode" required>
+                              </label>
+                              <label>
+                                 <span>Country</span>
+                                 <input type="text" name="country" required>
+                              </label>
+                              <label class="account-checkbox">
+                                 <input type="checkbox" name="isDefault">
+                                 <span>Set as default delivery address</span>
+                              </label>
+                              <div class="is-full account-form-actions">
+                                 <button type="submit" class="hero-btn primary">Save Address</button>
+                              </div>
+                           </form>
+                           <div class="account-address-list" data-addresses-list></div>
+                        </div>
+                     </section>
+
+                     <section class="dashboard-panel" data-dashboard-panel="security" hidden>
+                        <div class="dashboard-panel-head">
+                           <span class="content_eyebrow"><i class="fa fa-lock icon-inline" aria-hidden="true"></i>Security</span>
+                           <h2 class="content_title">Update password</h2>
+                        </div>
+                        <form class="account-form-grid account-security-form" data-security-form>
+                           <label class="is-full">
+                              <span>Current Password</span>
+                              <input type="password" name="currentPassword" required>
+                           </label>
+                           <label>
+                              <span>New Password</span>
+                              <input type="password" name="newPassword" required>
+                           </label>
+                           <label>
+                              <span>Confirm New Password</span>
+                              <input type="password" name="confirmPassword" required>
+                           </label>
+                           <div class="is-full account-form-actions">
+                              <button type="submit" class="hero-btn primary">Update Password</button>
+                           </div>
+                        </form>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <footer class="site_footer">
+         <div class="container">
+            <div class="footer_highlight_bar">
+               <div class="footer_highlight_item">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                  <div>
+                     <strong>Fast Setup Slots</strong>
+                     <span>Priority booking windows for last-minute celebrations.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <div>
+                     <strong>UK-Wide Coverage</strong>
+                     <span>From intimate home reveals to destination event styling.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  <div>
+                     <strong>Direct Support</strong>
+                     <span>Planning guidance from brief to final reveal timing.</span>
+                  </div>
+               </div>
+            </div>
+            <div class="footer_top">
+               <div class="footer_brand_column">
+                  <a class="footer_brand" href="{% url 'home' %}">
+                     <img src="{% static 'images/logo.png' %}" alt="BettyVerse logo">
+                     <span>BettyVerse</span>
+                  </a>
+                  <p class="footer_copy">Premium surprise styling, thoughtful gifting, and celebration planning for clients across the UK.</p>
+                  <p class="footer_service_note">Based in Dunfermline, Scotland and available for bookings anywhere in the UK.</p>
+                  <div class="footer_social_links" aria-label="BettyVerse social links">
+                     <a href="https://www.tiktok.com/@bettyverse_" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.44h-3.2v12.58a2.77 2.77 0 1 1-1.9-2.63V8.96a5.98 5.98 0 1 0 5.1 5.91V8.5a8.02 8.02 0 0 0 4.68 1.5V6.69h-.91z"></path>
+                        </svg>
+                     </a>
+                     <a href="https://www.instagram.com/bettyverse_/" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.snapchat.com/add/bettyverse" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+               <div class="footer_links_column">
+                  <h3 class="footer_title">Useful Links</h3>
+                  <ul class="footer_links">
+                     <li><a href="{% url 'home' %}">Home</a></li>
+                     <li><a href="{% url 'packages' %}">Packages</a></li>
+                     <li><a href="{% url 'services' %}">Services</a></li>
+                     <li><a href="{% url 'booking' %}">Booking</a></li>
+                     <li><a href="user-dashboard.html">Dashboard</a></li>
+                  </ul>
+               </div>
+               <div class="footer_contact_column">
+                  <h3 class="footer_title">Contact Details</h3>
+                  <ul class="footer_contact_list">
+                     <li><span>Address</span><strong>59 Don Road, Dunfermline, Scotland, UK</strong></li>
+                     <li><span>Postcode</span><strong>KY11 4NH</strong></li>
+                     <li><span>Phone</span><a href="tel:07467036297">07467036297</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_bottom">
+               <p class="copyright_text">2026 BettyVerse. Crafted for unforgettable celebrations.</p>
+               <ul class="footer_bottom_links">
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'services' %}">Services</a></li>
+                  <li><a href="{% url 'booking' %}">Booking</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/cart.js' %}"></script>
+      <script src="{% static 'js/account-dashboard.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>
+

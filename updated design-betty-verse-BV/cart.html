@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Cart</title>
+      <meta name="keywords" content="BettyVerse cart">
+      <meta name="description" content="Review your selected BettyVerse packages and continue to booking.">
+      <meta name="author" content="BettyVerse">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="icon" href="images/bookmark.jpeg" type="image/jpeg">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/bookmark.png">
+      <link rel="apple-touch-icon-precomposed" href="images/bookmark.png">
+      <meta property="og:image" content="images/bookmark.jpeg">
+      <meta name="twitter:image" content="images/bookmark.jpeg">
+      <meta name="apple-mobile-web-app-title" content="BettyVerse">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="page-shell cart-page">
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand brand-mark" href="index.html" aria-label="BettyVerse home"><span class="brand-mark__icon" aria-hidden="true"><img src="images/logo.png" alt=""></span><span class="brand-mark__text"><strong>Betty</strong> Verse</span></a>
+               <a class="mobile_cart_link" href="cart.html" data-cart-link aria-label="View cart">
+                  <span class="mobile_cart_icon" aria-hidden="true"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  <span class="cart_count" data-cart-count aria-live="polite">0</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="packages.html" id="packagesDropdown" role="button" aria-haspopup="true" aria-expanded="false">Packages</a>
+                        <div class="dropdown-menu" aria-labelledby="packagesDropdown">
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=birthday">Birthday</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=custom-request">Custom Request</a>
+                                 <a class="dropdown-item" href="packages.html?filter=kids-birthday">Kids Birthday</a>
+                                 <a class="dropdown-item" href="packages.html?filter=betty-confetti">Betty And Confetti</a>
+                                 <a class="dropdown-item" href="packages.html?filter=car-boot">Car Boot</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="packages.html?filter=surprise">Surprise By Betty At</a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="packages.html?filter=university">University</a>
+                                       <a class="dropdown-item" href="packages.html?filter=workplace">Workplace</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=anniversary">Anniversary</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=anniversary-choice">By Choice</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="packages.html?filter=anniversary">Anniversary Decorations</a>
+                                    <div class="dropdown-menu">
+                                                                              <a class="dropdown-item" href="packages.html?filter=anniversary-home">Decoration At Home</a>
+                                       <a class="dropdown-item" href="packages.html?filter=anniversary-car">Car Boot Decoration</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=surprise">Your Occasion</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=occasion-choice">By Choice</a>
+                                 <a class="dropdown-item" href="packages.html?filter=valentine">Valentine's Day</a>
+                                 <a class="dropdown-item" href="packages.html?filter=baby-shower">Baby Shower</a>
+                                 <a class="dropdown-item" href="packages.html?filter=proposal">Proposal</a>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=festival">Festival</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=christmas">Christmas Decorations</a>
+                                 <a class="dropdown-item" href="packages.html?filter=new-year">New Year</a>
+                                 <a class="dropdown-item" href="packages.html?filter=easter">Easter</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="search-container">
+                        <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                        <div class="fa fa-search form-control-feedback" onclick="toggleSearch()"></div>
+                     </div>
+                     <a class="cart_link active" href="cart.html" data-cart-link aria-label="View cart">
+                        <span class="cart_link_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="cart_link_text">Cart</span>
+                        <span class="cart_count" data-cart-count aria-live="polite">0</span>
+                     </a>
+                     <div class="login_bt"><a href="login/login_index.html">Login <span style="color: #ffffff;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <section class="page_hero">
+         <div class="container">
+            <span class="page_kicker"><i class="fa fa-shopping-cart icon-inline" aria-hidden="true"></i>Your Cart</span>
+            <h1 class="page_title">Review your selected packages.</h1>
+            <p class="page_intro">Your cart is saved here so you can review and book faster.</p>
+         </div>
+      </section>
+      <section class="content_section cart_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mb-4">
+                  <div class="cart-surface">
+                     <div class="cart-surface-head">
+                        <div>
+                           <span class="content_eyebrow"><i class="fa fa-list-alt icon-inline" aria-hidden="true"></i>Selected Packages</span>
+                           <h2 class="content_title">Saved package list.</h2>
+                        </div>
+                     </div>
+                     <div class="cart-empty-state" data-cart-empty hidden>
+                        <span class="card-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <h3>Your cart is empty right now.</h3>
+                        <p>Browse packages and add what you want to book.</p>
+                        <a class="hero-btn primary" href="packages.html">Browse Packages</a>
+                     </div>
+                     <div class="cart-items" data-cart-items></div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mb-4">
+                  <aside class="cart-summary-card">
+                     <span class="content_eyebrow"><i class="fa fa-calculator icon-inline" aria-hidden="true"></i>Summary</span>
+                     <h2 class="content_title">Ready to book.</h2>
+                     <div class="cart-summary-list">
+                        <div class="cart-summary-row">
+                           <span>Selected packages</span>
+                           <strong data-cart-items-count>0</strong>
+                        </div>
+                        <div class="cart-summary-row">
+                           <span>Estimated total</span>
+                           <strong data-cart-total>£0.00</strong>
+                        </div>
+                     </div>
+                     <p class="cart-summary-note">Use this shortlist and send it straight to booking.</p>
+                     <div class="cart-summary-actions">
+                        <button class="hero-btn secondary" type="button" data-open-review-order>Review Order</button>
+                        <a class="hero-btn primary" data-cart-contact-link href="booking.html?cart=1">Continue to Booking</a>
+                        <button class="hero-btn secondary" type="button" data-open-payment-modal>Pay Now</button>
+                        <a class="hero-btn secondary" href="packages.html">Add More Packages</a>
+                        <button class="cart-clear-btn" type="button" data-clear-cart>Clear Cart</button>
+                     </div>
+                  </aside>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="payment-modal" data-payment-modal hidden aria-hidden="true">
+         <div class="payment-modal-backdrop" data-payment-close></div>
+         <div class="payment-sheet" role="dialog" aria-modal="true" aria-labelledby="payment-sheet-title">
+            <div class="payment-sheet-header">
+               <button class="payment-sheet-back" type="button" data-payment-close aria-label="Close payment modal">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+               </button>
+               <h2 id="payment-sheet-title">Order Request</h2>
+               <span class="payment-sheet-spacer" aria-hidden="true"></span>
+            </div>
+            <div class="payment-sheet-body">
+               <div class="payment-sheet-section">
+                  <span class="payment-sheet-label">Address</span>
+                  <div class="payment-destination">
+                     <button class="payment-destination-icon payment-destination-icon-btn" type="button" data-open-address-modal aria-label="Edit address">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                     </button>
+                     <div class="payment-destination-copy">
+                        <strong data-payment-address-label>Home</strong>
+                        <p data-payment-address-lines>59 Don Road, Dunfermline, Scotland, UK</p>
+                        <button class="payment-destination-edit" type="button" data-open-address-modal>Edit address</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="payment-sheet-section">
+                  <span class="payment-sheet-label">Order Details</span>
+                  <div class="payment-destination">
+                     <button class="payment-destination-icon payment-destination-icon-btn" type="button" data-open-order-details-modal aria-label="Edit order details">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                     </button>
+                     <div class="payment-destination-copy">
+                        <strong data-order-details-label>Event details needed</strong>
+                        <p data-order-details-summary>Add event and setup details before confirming your order.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="payment-total-row payment-sheet-total">
+                  <span>Estimated Total</span>
+                  <strong><span data-payment-total>£0.00</span> <small>GBP</small></strong>
+               </div>
+               <button class="payment-review-btn" type="button" data-open-review-order>Review Order</button>
+               <div class="payment-status" data-payment-status></div>
+               <button class="payment-confirm-btn" type="button" data-payment-confirm>Pay</button>
+               <a class="payment-secondary-link" data-payment-book-link href="booking.html?cart=1">Prefer booking instead</a>
+            </div>
+         </div>
+      </div>
+      <div class="review-order-modal" data-review-order-modal hidden aria-hidden="true">
+         <div class="review-order-backdrop" data-review-order-close></div>
+         <div class="review-order-sheet" role="dialog" aria-modal="true" aria-labelledby="review-order-title">
+            <div class="review-order-head">
+               <h3 id="review-order-title">Review Order</h3>
+               <button type="button" class="review-order-close" data-review-order-close aria-label="Close review order modal">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+               </button>
+            </div>
+            <p class="review-order-copy">Check your selected packages, address, and total before submitting your order request.</p>
+            <div class="review-order-address">
+               <span>Delivery Address</span>
+               <strong data-review-address-label>Home</strong>
+               <p data-review-address-lines>59 Don Road, Dunfermline, Scotland, UK</p>
+            </div>
+            <div class="review-order-address">
+               <span>Order Details</span>
+               <strong data-review-order-details-label>Event details needed</strong>
+               <p data-review-order-details-summary>Add event and setup details before confirming your order.</p>
+               <button type="button" class="payment-destination-edit" data-open-order-details-modal>Add details</button>
+            </div>
+            <div class="review-order-items" data-review-order-items></div>
+            <p class="review-order-empty" data-review-order-empty hidden>Your cart is empty. Add a package to continue.</p>
+            <div class="review-order-summary">
+               <div class="review-order-summary-row">
+                  <span>Items</span>
+                  <strong data-review-items-count>0</strong>
+               </div>
+               <div class="review-order-summary-row">
+                  <span>Subtotal</span>
+                  <strong data-review-subtotal>£0.00</strong>
+               </div>
+               <div class="review-order-summary-row is-total">
+                  <span>Total</span>
+                  <strong data-review-total>£0.00</strong>
+               </div>
+            </div>
+            <div class="review-order-actions">
+               <button type="button" class="hero-btn secondary" data-review-order-close>Close</button>
+               <button type="button" class="hero-btn primary" data-review-start-payment>Proceed to Request</button>
+            </div>
+         </div>
+      </div>
+      <div class="address-modal" data-address-modal hidden aria-hidden="true">
+         <div class="address-modal-backdrop" data-address-close></div>
+         <div class="address-modal-sheet" role="dialog" aria-modal="true" aria-labelledby="address-modal-title">
+            <div class="address-modal-head">
+               <h3 id="address-modal-title">Add Address</h3>
+               <button type="button" class="address-modal-close" data-address-close aria-label="Close address modal">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+               </button>
+            </div>
+            <form class="address-form" data-address-form novalidate>
+               <label class="address-field">
+                  <span>Label</span>
+                  <input type="text" name="label" placeholder="Home, Office, Venue" required>
+               </label>
+               <label class="address-field">
+                  <span>Address line 1</span>
+                  <input type="text" name="line1" placeholder="Street and number" required>
+               </label>
+               <label class="address-field">
+                  <span>Address line 2</span>
+                  <input type="text" name="line2" placeholder="Apartment, suite, landmark (optional)">
+               </label>
+               <div class="address-grid">
+                  <label class="address-field">
+                     <span>City</span>
+                     <input type="text" name="city" placeholder="City" required>
+                  </label>
+                  <label class="address-field">
+                     <span>Postcode</span>
+                     <input type="text" name="postcode" placeholder="Postcode" required>
+                  </label>
+               </div>
+               <label class="address-field">
+                  <span>Country</span>
+                  <input type="text" name="country" placeholder="Country" required>
+               </label>
+               <p class="address-form-status" data-address-status></p>
+               <div class="address-form-actions">
+                  <button type="button" class="address-cancel" data-address-close>Cancel</button>
+                  <button type="submit" class="address-save">Save Address</button>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="address-modal" data-order-details-modal hidden aria-hidden="true">
+         <div class="address-modal-backdrop" data-order-details-close></div>
+         <div class="address-modal-sheet" role="dialog" aria-modal="true" aria-labelledby="order-details-modal-title">
+            <div class="address-modal-head">
+               <h3 id="order-details-modal-title">Order Details</h3>
+               <button type="button" class="address-modal-close" data-order-details-close aria-label="Close order details modal">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+               </button>
+            </div>
+            <form class="address-form" data-order-details-form novalidate>
+               <label class="address-field">
+                  <span>Full Name</span>
+                  <input type="text" name="fullName" placeholder="Your full name" required>
+               </label>
+               <div class="address-grid">
+                  <label class="address-field">
+                     <span>Phone Number</span>
+                     <input type="text" name="phone" placeholder="Phone number" required>
+                  </label>
+                  <label class="address-field">
+                     <span>Email Address</span>
+                     <input type="email" name="email" placeholder="Email address" required>
+                  </label>
+               </div>
+               <div class="address-grid">
+                  <label class="address-field">
+                     <span>Event Type</span>
+                     <input type="text" name="eventType" placeholder="Birthday, surprise, proposal" required>
+                  </label>
+                  <label class="address-field">
+                     <span>Event Date &amp; Time</span>
+                     <input type="datetime-local" name="eventDateTime" required>
+                  </label>
+               </div>
+               <label class="address-field">
+                  <span>Theme / Colour Scheme</span>
+                  <input type="text" name="theme" placeholder="Blue and silver, pastel luxe">
+               </label>
+               <label class="address-field">
+                  <span>Occasion Details</span>
+                  <input type="text" name="occasionDetails" placeholder="Surprise setup for 30th birthday">
+               </label>
+               <label class="address-field">
+                  <span>Special Requests</span>
+                  <textarea name="specialRequests" rows="3" placeholder="Extra requests, add-ons, styling notes"></textarea>
+               </label>
+               <div class="address-grid">
+                  <label class="address-field">
+                     <span>Property Type</span>
+                     <select name="propertyType" required>
+                        <option value="">Select</option>
+                        <option value="home">Home</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="airbnb">Airbnb</option>
+                        <option value="venue">Venue</option>
+                     </select>
+                  </label>
+                  <label class="address-field">
+                     <span>Parking Availability</span>
+                     <select name="parkingAvailability">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="limited">Limited</option>
+                        <option value="no">No</option>
+                     </select>
+                  </label>
+               </div>
+               <label class="address-field">
+                  <span>Access Instructions</span>
+                  <textarea name="accessInstructions" rows="3" placeholder="Gate code, reception instructions, floor access"></textarea>
+               </label>
+               <div class="address-grid">
+                  <label class="address-field">
+                     <span>Budget (optional)</span>
+                     <input type="text" name="budget" placeholder="Budget range">
+                  </label>
+                  <label class="address-field">
+                     <span>Photo/Video Permission</span>
+                     <select name="photoVideoPermission" required>
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                     </select>
+                  </label>
+               </div>
+               <label class="address-field">
+                  <span>Inspiration Photo Links (optional)</span>
+                  <input type="text" name="inspirationLinks" placeholder="Paste image links if any">
+               </label>
+               <label class="account-checkbox">
+                  <input type="checkbox" name="travelFees" required>
+                  <span>Travel fees may apply</span>
+               </label>
+               <label class="account-checkbox">
+                  <input type="checkbox" name="depositRequired" required>
+                  <span>Deposit required to secure booking</span>
+               </label>
+               <p class="address-form-status" data-order-details-status></p>
+               <div class="address-form-actions">
+                  <button type="button" class="address-cancel" data-order-details-close>Cancel</button>
+                  <button type="submit" class="address-save">Save Details</button>
+               </div>
+            </form>
+         </div>
+      </div>
+      <footer class="site_footer">
+         <div class="container">
+            <div class="footer_highlight_bar">
+               <div class="footer_highlight_item">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                  <div>
+                     <strong>Fast Setup Slots</strong>
+                     <span>Priority booking windows for last-minute celebrations.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <div>
+                     <strong>UK-Wide Coverage</strong>
+                     <span>From intimate home reveals to destination event styling.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  <div>
+                     <strong>Direct Support</strong>
+                     <span>Planning guidance from brief to final reveal timing.</span>
+                  </div>
+               </div>
+            </div>
+            <div class="footer_top">
+               <div class="footer_brand_column">
+                  <a class="footer_brand" href="index.html">
+                     <img src="images/logo.png" alt="BettyVerse logo">
+                     <span>BettyVerse</span>
+                  </a>
+                  <p class="footer_copy">Premium surprise styling, thoughtful gifting, and celebration planning for clients across the UK.</p>
+                  <p class="footer_service_note">Based in Dunfermline, Scotland and available for bookings anywhere in the UK.</p>
+                  <div class="footer_newsletter">
+                     <h3 class="footer_title">Newsletter</h3>
+                     <p class="footer_newsletter_copy">Subscribe for offers, styling trends, and new package launches.</p>
+                     <form class="footer_newsletter_form" action="#" method="post" novalidate>
+                        <input type="email" class="footer_newsletter_input" placeholder="Enter your email address" aria-label="Email address">
+                        <button class="footer_newsletter_button" type="button">Subscribe</button>
+                     </form>
+                  </div>
+                  <div class="footer_social_links" aria-label="BettyVerse social links">
+                     <a href="https://www.tiktok.com/@bettyverse_" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.44h-3.2v12.58a2.77 2.77 0 1 1-1.9-2.63V8.96a5.98 5.98 0 1 0 5.1 5.91V8.5a8.02 8.02 0 0 0 4.68 1.5V6.69h-.91z"></path>
+                        </svg>
+                     </a>
+                     <a href="https://www.instagram.com/bettyverse_/" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.snapchat.com/add/bettyverse" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                  </div>               </div>
+               <div class="footer_links_column">
+                  <h3 class="footer_title">Useful Links</h3>
+                  <ul class="footer_links">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="packages.html">Packages</a></li>
+                     <li><a href="services.html">Services</a></li>
+                     <li><a href="booking.html">Booking</a></li>
+                     <li><a href="cart.html">Cart</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Occasions</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="packages.html?filter=birthday">Birthday</a></li>
+                     <li><a href="packages.html?filter=anniversary">Anniversary</a></li>
+                     <li><a href="packages.html?filter=surprise">Proposal &amp; Surprise</a></li>
+                     <li><a href="packages.html?filter=festival">Festive Moments</a></li>
+                  </ul>
+               </div>
+               <div class="footer_contact_column">
+                  <h3 class="footer_title">Contact Details</h3>
+                  <ul class="footer_contact_list">
+                     <li><span>Address</span><strong>59 Don Road, Dunfermline, Scotland, UK</strong></li>
+                     <li><span>Postcode</span><strong>KY11 4NH</strong></li>
+                     <li><span>Phone</span><a href="tel:07467036297">07467036297</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Need Help?</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="booking.html">Book a Consultation</a></li>
+                     <li><a href="blog.html">Planning Tips</a></li>
+                     <li><a href="about.html">About BettyVerse</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_bottom">
+               <p class="copyright_text">2026 BettyVerse. Crafted for unforgettable celebrations.</p>
+               <ul class="footer_bottom_links">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="booking.html">Booking</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/cart.js"></script>
+      <script src="js/payment.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
+

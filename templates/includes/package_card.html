@@ -1,0 +1,65 @@
+{% load static %}
+<div class="col-lg-6 col-xl-4 mb-4 package-card-item"
+     data-category="{{ package.filterCategory }}"
+     data-audience="{{ package.tags }}"
+     data-tags="{{ package.tags }}">
+   <article class="package-card"
+      data-package-id="{{ package.slug }}"
+      data-package-backend-id="{{ package.packageId }}"
+      data-package-slug="{{ package.slug }}"
+      data-package-name="{{ package.name }}"
+      data-package-category="{{ package.category }}"
+      data-package-price="{{ package.price }}"
+      data-package-base-price="{{ package.basePrice }}"
+      data-package-image="{{ package.image }}"
+      data-package-image2="{% if package.images|length > 1 %}{{ package.images.1 }}{% endif %}"
+      data-package-image3="{% if package.images|length > 2 %}{{ package.images.2 }}{% endif %}"
+      data-package-slide-images='{{ package.slideImagesJson|escapejs }}'
+      data-package-summary="{{ package.summary }}">
+      <div class="package-media">
+         {% if package.image %}
+         <img src="{{ package.image }}" alt="{{ package.name }}">
+         {% else %}
+         <img src="{% static 'images/logo.png' %}" alt="{{ package.name }}">
+         {% endif %}
+         <span class="package-label">
+            {% if package.filterCategory == "anniversary" or package.filterCategory == "surprise" %}
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            {% else %}
+            <i class="fa fa-gift" aria-hidden="true"></i>
+            {% endif %}
+            {{ package.category }}
+         </span>
+      </div>
+      <div class="package-card-top">
+         <h3>{{ package.name }}</h3>
+         <span class="package-price">&pound;{{ package.basePrice|floatformat:"-2" }}</span>
+      </div>
+      <p class="package-summary">{{ package.summary }}</p>
+      <ul class="package-highlights"></ul>
+      <div class="package-actions">
+         <button class="add-cart" type="button" data-add-to-cart>Add to Cart</button>
+         <button class="details-toggle" type="button">Add on</button>
+      </div>
+      <div class="package-details">
+         <p class="package-details-title">Select optional add-ons</p>
+         <div class="package-addon-list">
+            {% for addon in package.addons %}
+            <label class="package-addon-option">
+               <input class="package-addon-input"
+                      type="checkbox"
+                      value="{{ addon.id }}"
+                      data-addon-id="{{ addon.id }}"
+                      data-addon-name="{{ addon.name }}"
+                      data-addon-price="{{ addon.price|floatformat:'2' }}">
+               <span class="package-addon-copy">
+                  <span class="package-addon-name">{{ addon.name }}</span>
+                  <span class="package-addon-price">+&pound;{{ addon.price|floatformat:"-2" }}</span>
+               </span>
+            </label>
+            {% endfor %}
+         </div>
+         <div class="package-addon-summary"><span>Add-on total</span><strong class="package-addon-total">&pound;0</strong></div>
+      </div>
+   </article>
+</div>

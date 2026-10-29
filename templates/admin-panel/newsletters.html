@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Admin | BettyVerse</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png">
+  <link rel="stylesheet" href="{% static 'admin-panel/admin.css' %}">
+</head>
+<body class="admin-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <div class="admin-sidebar__brand">
+        <img src="{% static 'images/logo.png' %}" alt="BettyVerse logo">
+        <div>
+          <strong>BettyVerse</strong>
+          <span>Newsletter Admin</span>
+        </div>
+      </div>
+      <nav class="admin-nav" aria-label="Admin navigation">
+        <a class="admin-nav__item is-active" href="{% url 'newsletter_admin' %}">Newsletters</a>
+        <a class="admin-nav__item" href="{% url 'admin:index' %}">Django Admin</a>
+      </nav>
+      <div class="admin-sidebar__footer">
+        <p>Manage newsletter subscribers and send campaign emails from the live Django backend.</p>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      <header class="admin-topbar">
+        <div>
+          <span class="admin-chip admin-chip--soft">Newsletters</span>
+          <h1>Newsletter Management</h1>
+        </div>
+        <div class="admin-topbar__actions">
+          <div class="admin-user-pill">
+            <span class="admin-user-pill__avatar">{{ request.user.username|first|upper }}</span>
+            <div>
+              <strong>{{ request.user.get_full_name|default:request.user.username }}</strong>
+              <small>Staff account</small>
+            </div>
+          </div>
+          <form method="post" action="{% url 'logout' %}" style="display: inline;">
+            {% csrf_token %}
+            <button class="admin-btn admin-btn--ghost" type="submit">Log out</button>
+          </form>
+        </div>
+      </header>
+
+      <main class="admin-content">
+        {% if messages %}
+        {% for message in messages %}
+        <div class="admin-banner{% if message.tags %} is-{{ message.tags }}{% endif %}">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+
+        <div class="admin-metric-grid">
+          <article class="admin-metric-card">
+            <span>Active Subscribers</span>
+            <strong>{{ active_subscriber_count }}</strong>
+            <small>Will receive future newsletter sends</small>
+          </article>
+          <article class="admin-metric-card">
+            <span>Total Subscribers</span>
+            <strong>{{ subscribers|length }}</strong>
+            <small>All currently saved subscriber records</small>
+          </article>
+          <article class="admin-metric-card">
+            <span>Campaigns Sent</span>
+            <strong>{{ campaigns|length }}</strong>
+            <small>Recent send history stored in the app</small>
+          </article>
+        </div>
+
+        <div class="admin-split admin-split--wide" style="margin-top: 18px;">
+          <section class="admin-panel-card">
+            <div class="admin-panel-card__head">
+              <div>
+                <h2>Send Newsletter</h2>
+                <p>Compose a custom email and send it to every active subscriber.</p>
+              </div>
+            </div>
+            <form class="admin-form-grid" method="post">
+              {% csrf_token %}
+              <label class="admin-field admin-field--full">
+                <span>Subject</span>
+                {{ form.subject }}
+                {{ form.subject.errors }}
+              </label>
+              <label class="admin-field admin-field--full">
+                <span>Message</span>
+                {{ form.body }}
+                {{ form.body.errors }}
+              </label>
+              <div class="admin-form-actions admin-field--full">
+                <button class="admin-btn admin-btn--primary" type="submit">Send Newsletter</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="admin-panel-card">
+            <div class="admin-panel-card__head">
+              <div>
+                <h2>Recent Campaigns</h2>
+                <p>Track what has been sent and to how many subscribers.</p>
+              </div>
+            </div>
+            {% if campaigns %}
+            <div class="admin-list-stack">
+              {% for campaign in campaigns %}
+              <div class="admin-list-row">
+                <strong>{{ campaign.subject }}</strong>
+                <small>{{ campaign.recipient_count }} recipient(s){% if campaign.sent_at %} • {{ campaign.sent_at|date:"M j, Y g:i A" }}{% endif %}</small>
+                <small>{% if campaign.sent_by %}Sent by {{ campaign.sent_by.email }}{% else %}Sent by system{% endif %}</small>
+              </div>
+              {% endfor %}
+            </div>
+            {% else %}
+            <div class="admin-empty-state">No newsletter campaigns have been sent yet.</div>
+            {% endif %}
+          </section>
+        </div>
+
+        <section class="admin-panel-card" style="margin-top: 18px;">
+          <div class="admin-panel-card__head">
+            <div>
+              <h2>Subscribers</h2>
+              <p>Review subscribers and toggle whether they receive newsletters.</p>
+            </div>
+          </div>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Email</th>
+                  <th>Linked User</th>
+                  <th>Status</th>
+                  <th>Joined</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for subscriber in subscribers %}
+                <tr>
+                  <td><strong>{{ subscriber.email }}</strong></td>
+                  <td>{% if subscriber.user %}{{ subscriber.user.email }}{% else %}-{% endif %}</td>
+                  <td>
+                    {% if subscriber.is_active %}
+                    <span class="admin-badge is-paid">active</span>
+                    {% else %}
+                    <span class="admin-badge is-cancelled">inactive</span>
+                    {% endif %}
+                  </td>
+                  <td>{{ subscriber.created_at|date:"M j, Y" }}</td>
+                  <td>
+                    <form method="post" action="{% url 'newsletter_subscriber_toggle' subscriber.id %}">
+                      {% csrf_token %}
+                      <button class="admin-table__action{% if subscriber.is_active %} is-danger{% else %} is-success{% endif %}" type="submit">
+                        {% if subscriber.is_active %}Deactivate{% else %}Reactivate{% endif %}
+                      </button>
+                    </form>
+                  </td>
+                </tr>
+                {% empty %}
+                <tr>
+                  <td colspan="5">
+                    <div class="admin-empty-state">No newsletter subscribers yet.</div>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

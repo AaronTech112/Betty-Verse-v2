@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | BettyVerse</title>
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="icon" href="../images/bookmark.jpeg" type="image/jpeg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/bookmark.png">
+    <link rel="apple-touch-icon-precomposed" href="../images/bookmark.png">
+    <meta property="og:image" content="../images/bookmark.jpeg">
+    <meta name="twitter:image" content="../images/bookmark.jpeg">
+    <meta name="apple-mobile-web-app-title" content="BettyVerse">
+</head>
+<body class="auth-page">
+    <div class="auth-shell">
+        <div class="auth-brand-panel">
+            <a class="auth-home-link" href="../index.html">Back to Website</a>
+            <div class="auth-brand-mark"><img src="../images/logo.png" alt="BettyVerse logo"></div>
+            <span class="auth-kicker"><i class='bx bx-shield-quarter'></i>BettyVerse Access</span>
+            <h1>Welcome back.</h1>
+            <p>Log in to manage your bookings and account details.</p>
+            <ul class="auth-feature-list">
+                <li>Track bookings fast</li>
+                <li>Keep your details in one place</li>
+            </ul>
+        </div>
+        <div class="auth-form-panel">
+            <form class="auth-form" method="post">
+                              {% csrf_token %}
+                <span class="auth-section-label"><i class='bx bx-lock-alt'></i>Log In</span>
+                <h2>Sign in</h2>
+                <p class="auth-helper">Enter your email and password.</p>
+                {% if messages %}
+                {% for message in messages %}
+                <p class="auth-helper">{{ message }}</p>
+                {% endfor %}
+                {% endif %}
+                {{ form.non_field_errors }}
+                <div class="input-box">
+                    <input type="email" name="username" placeholder="Email address" value="{{ form.username.value|default_if_none:'' }}" required autocomplete="email">
+                    <i class='bx bxs-envelope'></i>
+                    {{ form.username.errors }}
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required id="loginPassword">
+                    <button type="button" class="password-toggle" id="loginToggle"><i class='bx bx-hide'></i></button>
+                    {{ form.password.errors }}
+                </div>
+                <div class="auth-row">
+                    <label class="check-label"><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Log In</button>
+                <p class="switch-text">New here? <a href="{% url 'signup' %}">Create account</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="login_script.js"></script>
+</body>
+</html>

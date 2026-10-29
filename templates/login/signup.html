@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | BettyVerse</title>
+    <link rel="stylesheet" href="{% static 'css/login_style.css' %}">
+    <link rel="icon" href="{% static 'images/bookmark.jpeg' %}" type="image/jpeg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/bookmark.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'images/bookmark.png' %}">
+    <meta property="og:image" content="{% static 'images/bookmark.jpeg' %}">
+    <meta name="twitter:image" content="{% static 'images/bookmark.jpeg' %}">
+    <meta name="apple-mobile-web-app-title" content="BettyVerse">
+</head>
+<body class="auth-page">
+    <div class="auth-shell signup-layout">
+        <div class="auth-brand-panel">
+            <a class="auth-home-link" href="../index.html">Back to Website</a>
+            <div class="auth-brand-mark"><img src="{% static 'images/logo.png' %}" alt="BettyVerse logo"></div>
+            <span class="auth-kicker"><i class='bx bx-sparkle'></i>Create Account</span>
+            <h1>Create your account.</h1>
+            <p>Save your details and book faster next time.</p>
+            <ul class="auth-feature-list">
+                <li>Faster repeat bookings</li>
+                <li>Easy account access</li>
+            </ul>
+        </div>
+        <div class="auth-form-panel">
+            <form class="auth-form" method="post">
+                              {% csrf_token %}
+                <span class="auth-section-label"><i class='bx bx-user-plus'></i>Sign Up</span>
+                <h2>Sign up</h2>
+                <p class="auth-helper">Fill in your details to get started.</p>
+                {% if messages %}
+                {% for message in messages %}
+                <p class="auth-helper">{{ message }}</p>
+                {% endfor %}
+                {% endif %}
+                {{ form.non_field_errors }}
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Username" value="{{ form.username.value|default_if_none:'' }}" required>
+                    <i class='bx bxs-user'></i>
+                    {{ form.username.errors }}
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email address" value="{{ form.email.value|default_if_none:'' }}" required>
+                    <i class='bx bxs-envelope'></i>
+                    {{ form.email.errors }}
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password1" placeholder="Create password" required id="registerPassword">
+                    <button type="button" class="password-toggle" id="registerToggle"><i class='bx bx-hide'></i></button>
+                    {{ form.password1.errors }}
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password2" placeholder="Confirm password" required>
+                    <i class='bx bx-lock-alt'></i>
+                    {{ form.password2.errors }}
+                </div>
+                <div class="input-box">
+                    <input type="text" name="phone" placeholder="Phone number" value="{{ form.phone.value|default_if_none:'' }}">
+                    <i class='bx bxs-phone'></i>
+                    {{ form.phone.errors }}
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+                <p class="switch-text">Already have an account? <a href="{% url 'login' %}">Log in instead</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="{% static 'js/login_script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | BettyVerse</title>
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="icon" href="../images/bookmark.jpeg" type="image/jpeg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/bookmark.png">
+    <link rel="apple-touch-icon-precomposed" href="../images/bookmark.png">
+    <meta property="og:image" content="../images/bookmark.jpeg">
+    <meta name="twitter:image" content="../images/bookmark.jpeg">
+    <meta name="apple-mobile-web-app-title" content="BettyVerse">
+</head>
+<body class="auth-page">
+    <div class="auth-shell signup-layout">
+        <div class="auth-brand-panel">
+            <a class="auth-home-link" href="../index.html">Back to Website</a>
+            <div class="auth-brand-mark"><img src="../images/logo.png" alt="BettyVerse logo"></div>
+            <span class="auth-kicker"><i class='bx bx-sparkle'></i>Create Account</span>
+            <h1>Create your account.</h1>
+            <p>Save your details and book faster next time.</p>
+            <ul class="auth-feature-list">
+                <li>Faster repeat bookings</li>
+                <li>Easy account access</li>
+            </ul>
+        </div>
+        <div class="auth-form-panel">
+            <form class="auth-form" action="#">
+                <span class="auth-section-label"><i class='bx bx-user-plus'></i>Sign Up</span>
+                <h2>Sign up</h2>
+                <p class="auth-helper">Fill in your details to get started.</p>
+                <div class="input-box">
+                    <input type="text" placeholder="Full name" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email address" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Create password" required id="registerPassword">
+                    <button type="button" class="password-toggle" id="registerToggle"><i class='bx bx-hide'></i></button>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Phone number" required>
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+                <p class="switch-text">Already have an account? <a href="login_index.html">Log in instead</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="login_script.js"></script>
+</body>
+</html>

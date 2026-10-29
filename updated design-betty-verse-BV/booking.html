@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Booking</title>
+      <meta name="keywords" content="BettyVerse booking">
+      <meta name="description" content="Start a BettyVerse booking for surprise packages, decor styling, and celebration planning.">
+      <meta name="author" content="BettyVerse">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="icon" href="images/bookmark.jpeg" type="image/jpeg">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/bookmark.png">
+      <link rel="apple-touch-icon-precomposed" href="images/bookmark.png">
+      <meta property="og:image" content="images/bookmark.jpeg">
+      <meta name="twitter:image" content="images/bookmark.jpeg">
+      <meta name="apple-mobile-web-app-title" content="BettyVerse">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="page-shell">
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand brand-mark" href="index.html" aria-label="BettyVerse home"><span class="brand-mark__icon" aria-hidden="true"><img src="images/logo.png" alt=""></span><span class="brand-mark__text"><strong>Betty</strong> Verse</span></a>
+               <a class="mobile_cart_link" href="cart.html" data-cart-link aria-label="View cart">
+                  <span class="mobile_cart_icon" aria-hidden="true"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  <span class="cart_count" data-cart-count aria-live="polite">0</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="packages.html" id="packagesDropdown" role="button" aria-haspopup="true" aria-expanded="false">Packages</a>
+                        <div class="dropdown-menu" aria-labelledby="packagesDropdown">
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=birthday">Birthday</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=custom-request">Custom Request</a>
+                                 <a class="dropdown-item" href="packages.html?filter=kids-birthday">Kids Birthday</a>
+                                 <a class="dropdown-item" href="packages.html?filter=betty-confetti">Betty And Confetti</a>
+                                 <a class="dropdown-item" href="packages.html?filter=car-boot">Car Boot</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="packages.html?filter=surprise">Surprise By Betty At</a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="packages.html?filter=university">University</a>
+                                       <a class="dropdown-item" href="packages.html?filter=workplace">Workplace</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=anniversary">Anniversary</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=anniversary-choice">By Choice</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="packages.html?filter=anniversary">Anniversary Decorations</a>
+                                    <div class="dropdown-menu">
+                                                                              <a class="dropdown-item" href="packages.html?filter=anniversary-home">Decoration At Home</a>
+                                       <a class="dropdown-item" href="packages.html?filter=anniversary-car">Car Boot Decoration</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=surprise">Your Occasion</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=occasion-choice">By Choice</a>
+                                 <a class="dropdown-item" href="packages.html?filter=valentine">Valentine's Day</a>
+                                 <a class="dropdown-item" href="packages.html?filter=baby-shower">Baby Shower</a>
+                                 <a class="dropdown-item" href="packages.html?filter=proposal">Proposal</a>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="packages.html?filter=festival">Festival</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="packages.html?filter=christmas">Christmas Decorations</a>
+                                 <a class="dropdown-item" href="packages.html?filter=new-year">New Year</a>
+                                 <a class="dropdown-item" href="packages.html?filter=easter">Easter</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="#">Booking</a></li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="search-container">
+                        <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                        <div class="fa fa-search form-control-feedback" onclick="toggleSearch()"></div>
+                     </div>
+                     <a class="cart_link" href="cart.html" data-cart-link aria-label="View cart">
+                        <span class="cart_link_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="cart_link_text">Cart</span>
+                        <span class="cart_count" data-cart-count aria-live="polite">0</span>
+                     </a>
+                     <div class="login_bt"><a href="login/login_index.html">Login <span style="color: #ffffff;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <section class="page_hero">
+         <div class="container">
+            <span class="page_kicker"><span class="icon-inline" aria-hidden="true"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span><span class="eyebrow-copy">Book With BettyVerse</span></span>
+            <h1 class="page_title">Share your details and book your celebration.</h1>
+            <p class="page_intro">Send your date, venue, and style notes. We will shape the rest.</p>
+         </div>
+      </section>
+      <section class="content_section">
+         <div class="container">
+            <div class="row align-items-start">
+               <div class="col-lg-7 mb-4">
+                  <div class="contact_card_modern">
+                     <span class="content_eyebrow"><span class="icon-inline" aria-hidden="true"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span><span class="eyebrow-copy">Booking Request</span></span>
+                     <h2 class="content_title">Tell us what you want.</h2>
+                     <div class="cart-message-note" data-cart-message-note hidden>
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span>Your cart selections have been added to the booking notes below. You can edit anything before sending.</span>
+                     </div>
+                     <form class="modern_form booking_form" action="#">
+                        <div class="booking_form_section">
+                           <h3>Client Information</h3>
+                           <div class="row">
+                              <div class="col-md-6"><div class="form-group"><input type="text" class="email-bt" placeholder="Full Name" name="name"></div></div>
+                              <div class="col-md-6"><div class="form-group"><input type="text" class="email-bt" placeholder="Phone Number" name="phone"></div></div>
+                              <div class="col-md-12"><div class="form-group"><input type="email" class="email-bt" placeholder="Email Address" name="email"></div></div>
+                           </div>
+                        </div>
+                        <div class="booking_form_section">
+                           <h3>Event Information</h3>
+                           <div class="row">
+                              <div class="col-md-6"><div class="form-group"><input type="text" class="email-bt" placeholder="Event Type" name="eventType"></div></div>
+                              <div class="col-md-6"><div class="form-group"><input type="datetime-local" class="email-bt" name="eventDateTime"></div></div>
+                              <div class="col-md-12"><div class="form-group"><textarea class="massage-bt massage-bt--compact" placeholder="Full Address" rows="3" name="fullAddress"></textarea></div></div>
+                           </div>
+                        </div>
+                        <div class="booking_form_section">
+                           <h3>Styling Details</h3>
+                           <div class="row">
+                              <div class="col-md-6"><div class="form-group"><input type="text" class="email-bt" placeholder="Theme / Colour Scheme" name="theme"></div></div>
+                              <div class="col-md-6"><div class="form-group"><input type="text" class="email-bt" placeholder="Occasion Details" name="occasionDetails"></div></div>
+                              <div class="col-md-12"><div class="form-group"><input type="text" class="email-bt" placeholder="Inspiration Photo Links (optional)" name="inspirationLinks"></div></div>
+                           </div>
+                        </div>
+                        <div class="booking_form_section">
+                           <h3>Access &amp; Setup</h3>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <select class="email-bt" name="propertyType">
+                                       <option value="">Property Type</option>
+                                       <option value="home">Home</option>
+                                       <option value="hotel">Hotel</option>
+                                       <option value="airbnb">Airbnb</option>
+                                       <option value="venue">Venue</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <select class="email-bt" name="parkingAvailability">
+                                       <option value="">Parking Availability</option>
+                                       <option value="yes">Yes</option>
+                                       <option value="limited">Limited</option>
+                                       <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-12"><div class="form-group"><textarea class="massage-bt massage-bt--compact" placeholder="Access Instructions" rows="3" name="accessInstructions"></textarea></div></div>
+                           </div>
+                        </div>
+                        <div class="booking_form_section">
+                           <h3>Additional</h3>
+                           <div class="row">
+                              <div class="col-md-6"><div class="form-group"><input type="text" class="email-bt" placeholder="Budget (optional)" name="budget"></div></div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <select class="email-bt" name="photoVideoPermission">
+                                       <option value="">Photo/Video Permission</option>
+                                       <option value="yes">Yes</option>
+                                       <option value="no">No</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-12"><div class="form-group"><textarea class="massage-bt" placeholder="Anything else we should know?" rows="5" name="message"></textarea></div></div>
+                           </div>
+                        </div>
+                        <div class="booking_form_section">
+                           <h3>Agreement</h3>
+                           <label class="booking_check"><input type="checkbox" name="travelFees" required> <span>Travel fees may apply</span></label>
+                           <label class="booking_check"><input type="checkbox" name="depositRequired" required> <span>Deposit required to secure booking</span></label>
+                        </div>
+                        <div class="booking_form_actions">
+                           <button class="booking_submit" type="submit">Submit Booking</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-lg-5 mb-4">
+                  <div class="info_stack">
+                     <div class="info_card"><span class="card-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><h3>Service Area</h3><p>Based in Dunfermline, with bookings across the UK.</p></div>
+                     <div class="info_card"><span class="card-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><h3>Booking Email</h3><p>Email <strong>bettyverse2026@gmail.com</strong> for availability and pricing.</p></div>
+                     <div class="info_card"><span class="card-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><h3>Booking Line</h3><p>Call or message <strong>07467036297</strong> for quick support.</p></div>
+                     <div class="social_panel">
+                        <a href="https://www.tiktok.com/@bettyverse_" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on TikTok">
+                           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.44h-3.2v12.58a2.77 2.77 0 1 1-1.9-2.63V8.96a5.98 5.98 0 1 0 5.1 5.91V8.5a8.02 8.02 0 0 0 4.68 1.5V6.69h-.91z"></path>
+                           </svg>
+                        </a>
+                        <a href="https://www.instagram.com/bettyverse_/" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.snapchat.com/add/bettyverse" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="site_footer">
+         <div class="container">
+            <div class="footer_highlight_bar">
+               <div class="footer_highlight_item">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                  <div>
+                     <strong>Fast Setup Slots</strong>
+                     <span>Priority booking windows for last-minute celebrations.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <div>
+                     <strong>UK-Wide Coverage</strong>
+                     <span>From intimate home reveals to destination event styling.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  <div>
+                     <strong>Direct Support</strong>
+                     <span>Planning guidance from brief to final reveal timing.</span>
+                  </div>
+               </div>
+            </div>
+            <div class="footer_top">
+               <div class="footer_brand_column">
+                  <a class="footer_brand" href="index.html">
+                     <img src="images/logo.png" alt="BettyVerse logo">
+                     <span>BettyVerse</span>
+                  </a>
+                  <p class="footer_copy">Premium surprise styling, thoughtful gifting, and celebration planning for clients across the UK.</p>
+                  <p class="footer_service_note">Based in Dunfermline, Scotland and available for bookings anywhere in the UK.</p>
+                  <div class="footer_newsletter">
+                     <h3 class="footer_title">Newsletter</h3>
+                     <p class="footer_newsletter_copy">Subscribe for offers, styling trends, and new package launches.</p>
+                     <form class="footer_newsletter_form" action="#" method="post" novalidate>
+                        <input type="email" class="footer_newsletter_input" placeholder="Enter your email address" aria-label="Email address">
+                        <button class="footer_newsletter_button" type="button">Subscribe</button>
+                     </form>
+                  </div>
+                  <div class="footer_social_links" aria-label="BettyVerse social links">
+                     <a href="https://www.tiktok.com/@bettyverse_" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.44h-3.2v12.58a2.77 2.77 0 1 1-1.9-2.63V8.96a5.98 5.98 0 1 0 5.1 5.91V8.5a8.02 8.02 0 0 0 4.68 1.5V6.69h-.91z"></path>
+                        </svg>
+                     </a>
+                     <a href="https://www.instagram.com/bettyverse_/" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.snapchat.com/add/bettyverse" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                  </div>               </div>
+               <div class="footer_links_column">
+                  <h3 class="footer_title">Useful Links</h3>
+                  <ul class="footer_links">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="packages.html">Packages</a></li>
+                     <li><a href="services.html">Services</a></li>
+                     <li><a href="booking.html">Booking</a></li>
+                     <li><a href="cart.html">Cart</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Occasions</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="packages.html?filter=birthday">Birthday</a></li>
+                     <li><a href="packages.html?filter=anniversary">Anniversary</a></li>
+                     <li><a href="packages.html?filter=surprise">Proposal &amp; Surprise</a></li>
+                     <li><a href="packages.html?filter=festival">Festive Moments</a></li>
+                  </ul>
+               </div>
+               <div class="footer_contact_column">
+                  <h3 class="footer_title">Contact Details</h3>
+                  <ul class="footer_contact_list">
+                     <li><span>Address</span><strong>59 Don Road, Dunfermline, Scotland, UK</strong></li>
+                     <li><span>Postcode</span><strong>KY11 4NH</strong></li>
+                     <li><span>Phone</span><a href="tel:07467036297">07467036297</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Need Help?</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="booking.html">Book a Consultation</a></li>
+                     <li><a href="blog.html">Planning Tips</a></li>
+                     <li><a href="about.html">About BettyVerse</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_bottom">
+               <p class="copyright_text">2026 BettyVerse. Crafted for unforgettable celebrations.</p>
+               <ul class="footer_bottom_links">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="booking.html">Booking</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/cart.js"></script>
+      <script src="js/booking-prefill.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>

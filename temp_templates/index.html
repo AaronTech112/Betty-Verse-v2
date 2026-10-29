@@ -1,0 +1,694 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>BettyVerse</title>
+      <meta name="keywords" content="surprise gifts, celebration packages, event styling">
+      <meta name="description" content="BettyVerse creates stylish surprise packages and celebration setups for birthdays, anniversaries, proposals, and special occasions.">
+      <meta name="author" content="BettyVerse">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <link rel="icon" href="{% static 'images/bookmark.jpeg' %}" type="image/jpeg">
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/bookmark.png' %}">
+      <link rel="apple-touch-icon-precomposed" href="{% static 'images/bookmark.png' %}">
+      <meta property="og:image" content="images/bookmark.jpeg">
+      <meta name="twitter:image" content="images/bookmark.jpeg">
+      <meta name="apple-mobile-web-app-title" content="BettyVerse">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body class="home-shell">
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand brand-mark" href="{% url 'home' %}" aria-label="BettyVerse home"><span class="brand-mark__icon" aria-hidden="true"><img src="{% static 'images/logo.png' %}" alt=""></span><span class="brand-mark__text"><strong>Betty</strong> Verse</span></a>
+               <a class="mobile_cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                  <span class="mobile_cart_icon" aria-hidden="true"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  <span class="cart_count" data-cart-count aria-live="polite">0</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'packages' %}" id="packagesDropdown" role="button" aria-haspopup="true" aria-expanded="false">Packages</a>
+                        <div class="dropdown-menu" aria-labelledby="packagesDropdown">
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=birthday">Birthday</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=custom-request">Custom Request</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=kids-birthday">Kids Birthday</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=betty-confetti">Betty And Confetti</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=car-boot">Car Boot</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=surprise">Surprise By Betty At</a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=university">University</a>
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=workplace">Workplace</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=anniversary">Anniversary</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-choice">By Choice</a>
+                                 <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=anniversary">Anniversary Decorations</a>
+                                    <div class="dropdown-menu">
+                                                                              <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-home">Decoration At Home</a>
+                                       <a class="dropdown-item" href="{% url 'packages' %}?filter=anniversary-car">Car Boot Decoration</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=surprise">Your Occasion</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=occasion-choice">By Choice</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=valentine">Valentine's Day</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=baby-shower">Baby Shower</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=proposal">Proposal</a>
+                              </div>
+                           </div>
+                           <div class="dropdown-submenu">
+                              <a class="dropdown-item dropdown-toggle" href="{% url 'packages' %}?filter=festival">Festival</a>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=christmas">Christmas Decorations</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=new-year">New Year</a>
+                                 <a class="dropdown-item" href="{% url 'packages' %}?filter=easter">Easter</a>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{% url 'booking' %}">Booking</a></li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                              {% csrf_token %}
+                     <div class="search-container">
+                        <input type="text" id="search-input" class="search-input" placeholder="Search...">
+                        <div class="fa fa-search form-control-feedback" onclick="toggleSearch()"></div>
+                     </div>
+                     <a class="cart_link" href="{% url 'cart' %}" data-cart-link aria-label="View cart">
+                        <span class="cart_link_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="cart_link_text">Cart</span>
+                        <span class="cart_count" data-cart-count aria-live="polite">0</span>
+                     </a>
+                     {% if user.is_authenticated %}
+                     <div class="login_bt"><a href="{% url 'dashboard' %}">My Account <span style="color: #ffffff;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                     {% else %}
+                     <div class="login_bt"><a href="{% url 'login' %}">Login <span style="color: #ffffff;"><i class="fa fa-user" aria-hidden="true"></i></span></a></div>
+                     {% endif %}
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+
+      <section class="home-banner">
+         <div class="container">
+            <div class="home-carousel-shell">
+               <div id="carouselExampleIndicators" class="carousel slide pointer-event woofern-carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" data-slide-to="0" data-bs-slide-to="0" class="active"></li>
+                     <li data-target="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" data-slide-to="1" data-bs-slide-to="1"></li>
+                     <li data-target="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" data-slide-to="2" data-bs-slide-to="2"></li>
+                     <li data-target="#carouselExampleIndicators" data-bs-target="#carouselExampleIndicators" data-slide-to="3" data-bs-slide-to="3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="woofern-slide-row">
+                           <div class="woofern-slide-copy">
+                              <h2>Birthday Premium Surprise</h2>
+                              <p>Stylish setups, curated gifts, and polished birthday reveal moments.</p>
+                              <a class="woofern-caption-btn" href="{% url 'packages' %}?filter=birthday">Explore Birthday</a>
+                           </div>
+                           <div class="woofern-slide-media">
+                              <a href="{% url 'packages' %}?filter=birthday">
+                                 <img src="{% static 'images/bday_demo.png' %}" class="d-block w-100" alt="slider-0">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="woofern-slide-row">
+                           <div class="woofern-slide-copy">
+                              <h2>Proposal Experiences</h2>
+                              <p>Elegant proposal concepts with refined decor and smooth coordination.</p>
+                              <a class="woofern-caption-btn" href="{% url 'packages' %}?filter=proposal">View Proposal</a>
+                           </div>
+                           <div class="woofern-slide-media">
+                              <a href="{% url 'packages' %}?filter=proposal">
+                                 <img src="{% static 'images/prop-2hearts.png' %}" class="d-block w-100" alt="slider-1">
+                              </a>
+                           </div> 
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="woofern-slide-row">
+                           <div class="woofern-slide-copy">
+                              <h2>Anniversary Surprise</h2>
+                              <p>Memorable anniversary styling for home, hotel, and intimate settings.</p>
+                              <a class="woofern-caption-btn" href="{% url 'packages' %}?filter=anniversary">See Anniversary</a>
+                           </div>
+                           <div class="woofern-slide-media">
+                              <a href="{% url 'packages' %}?filter=anniversary">
+                                 <img src="{% static 'images/props_demo.png' %}" class="d-block w-100" alt="slider-2">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="woofern-slide-row">
+                           <div class="woofern-slide-media" style="grid-column: 1 / -1;">
+                              <a href="{% url 'packages' %}" aria-label="Open featured package slide">
+                                 <img src="{% static 'images/4th slide.jpg' %}" class="d-block w-100" alt="slider-3">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="home-hero">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6">
+                  <h1 class="home-title">Stylish surprise setups for big moments.</h1>
+                  <p class="home-copy">Birthday, anniversary, and proposal styling.</p>
+                  <div class="home-actions">
+                     <a class="hero-btn primary" href="{% url 'packages' %}">Explore Packages</a>
+                     <a class="hero-btn secondary" href="{% url 'booking' %}">Start Booking</a>
+                  </div>
+                   <div style="padding-top: 0.5cm;"></div>
+                  <div class="home-stats">
+                     <div class="home-stat">
+                        <div class="home-stat-head">
+                           <strong class="home-stat-title">Premium</strong>
+                        </div>
+                        <span class="home-stat-desc">gift styling</span>
+                     </div>
+                     <div class="home-stat">
+                        <div class="home-stat-head">
+                           <strong class="home-stat-title">Flexible</strong>
+                        </div>
+                        <span class="home-stat-desc">home and hotel setups</span>
+                     </div>
+                     <div class="home-stat">
+                        <div class="home-stat-head">
+                           <strong class="home-stat-title">Reliable</strong>
+                        </div>
+                        <span class="home-stat-desc">brief-to-reveal planning</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div style="padding-top: 0.5cm;"></div>
+               <!-- <div class="col-lg-6">
+                  <div class="overview-lead-card home-hero-panel">
+                     <span class="content_eyebrow"><i class="fa fa-star icon-inline" aria-hidden="true"></i>What We Deliver</span>
+                     <h2 class="content_title">Premium styling, smooth process.</h2>
+                     <p class="content_text">Clean setup from brief to reveal.</p>
+                     <div class="home-panel-list">
+                        <div class="home-panel-item">
+                           <strong>Gift Curation</strong>
+                           <span>Thoughtful, clean presentation.</span>
+                        </div>
+                        <div class="home-panel-item">
+                           <strong>Decor Styling</strong>
+                           <span>Refined setups for standout moments.</span>
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+      </section>
+
+      <section class="content_section home-trending" data-home-trending>
+         <div class="container">
+            <div class="section_heading home-trending-heading">
+               <div>
+                  <span class="content_eyebrow"><i class="fa fa-line-chart icon-inline" aria-hidden="true"></i>Trending Now</span>
+               </div>
+            </div>
+            <div class="home-trending-shell">
+               <button class="home-trending-nav home-trending-nav--prev" type="button" data-trending-prev aria-label="Previous trending packages">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+               </button>
+               <div class="home-trending-track" data-trending-track>
+                  <article class="home-trending-card package-card" data-season="summer birthday kids may june july august" data-package-id="finding-nemo-inspired-package" data-package-name="Finding Nemo Inspired Package" data-package-category="Birthday" data-package-price="110" data-package-base-price="110" data-package-image="images/Nemo_inspired.jpg" data-package-summary="An underwater-themed birthday setup with Nemo character visuals, ocean-tone balloons, and a polished photo-ready stage.">
+                     <div class="package-media">
+                        <img src="{% static 'images/Nemo_inspired.jpg' %}" alt="Finding Nemo Inspired Package">
+                        <span class="package-label"><i class="fa fa-gift" aria-hidden="true"></i>Birthday</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>Finding Nemo Inspired Package</h3>
+                        <span class="package-price">&pound;110</span>
+                     </div>
+                     <p class="package-summary">An underwater-themed birthday setup with Nemo character visuals, ocean-tone balloons, and a polished photo-ready stage.</p>
+                     <ul class="package-highlights"><li>Underwater backdrop panels with coral accents and character cut-outs</li><li>Ocean blue-and-peach balloon garland with layered framing</li><li>Styled cake zone and polished photo-ready floor finish</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="summer birthday kids princess may june july august" data-package-id="sofia-the-first-inspired" data-package-name="Sofia The First Inspired" data-package-category="Birthday" data-package-price="140" data-package-base-price="140" data-package-image="images/Sofia_themed_inspiration.jpeg" data-package-summary="A royal Sofia the First birthday setup with pastel luxury balloons, floral accents, and princess styling for a premium photo-ready celebration.">
+                     <div class="package-media">
+                        <img src="{% static 'images/Sofia_themed_inspiration.jpeg' %}" alt="Sofia The First Inspired package">
+                        <span class="package-label"><i class="fa fa-gift" aria-hidden="true"></i>Birthday</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>Sofia The First Inspired</h3>
+                        <span class="package-price">&pound;140</span>
+                     </div>
+                     <p class="package-summary">A royal Sofia the First birthday setup with pastel luxury balloons, floral accents, and princess styling for a premium photo-ready celebration.</p>
+                     <ul class="package-highlights"><li>Pastel balloon styling with royal backdrop detail</li><li>Floral accents and princess-inspired finishing</li><li>Photo-ready celebration feature area</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="summer birthday kids may june july august" data-package-id="mickey-mouse-themed-package" data-package-name="Mickey Mouse Themed" data-package-category="Birthday" data-package-price="170" data-package-base-price="170" data-package-image="images/Mickey_Themed.jpeg" data-package-summary="A bold Mickey Mouse birthday setup with layered backdrop panels, multi-colour balloon styling, and character props designed for high-impact party photos.">
+                     <div class="package-media">
+                        <img src="{% static 'images/Mickey_Themed.jpeg' %}" alt="Mickey Mouse themed package">
+                        <span class="package-label"><i class="fa fa-gift" aria-hidden="true"></i>Birthday</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>Mickey Mouse Themed</h3>
+                        <span class="package-price">&pound;170</span>
+                     </div>
+                     <p class="package-summary">A bold Mickey Mouse birthday setup with layered backdrop panels, multi-colour balloon styling, and character props designed for high-impact party photos.</p>
+                     <ul class="package-highlights"><li>Layered panel backdrop with character props</li><li>Multi-colour balloon styling</li><li>Statement party photo area</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="summer birthday kids betty-confetti luxe hoop may june july august" data-package-id="betty-confetti-hoop-essentials" data-package-name="Luxe Hoop Celebration" data-package-category="Birthday" data-package-price="70" data-package-base-price="70" data-package-image="images/bandc20.jpg" data-package-summary="Gold hoop backdrop with luxe balloon clusters and custom number styling for intimate birthday celebrations.">
+                     <div class="package-media">
+                        <img src="{% static 'images/bandc20.jpg' %}" alt="Luxe Hoop Celebration package">
+                        <span class="package-label"><i class="fa fa-gift" aria-hidden="true"></i>Birthday</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>Luxe Hoop Celebration</h3>
+                        <span class="package-price">&pound;70</span>
+                     </div>
+                     <p class="package-summary">Gold hoop backdrop with luxe balloon clusters and custom number styling for intimate birthday celebrations.</p>
+                     <ul class="package-highlights"><li>Professionally styled balloon clusters</li><li>Foil number balloons for a custom age or number</li><li>Elegant, minimal luxury setup</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="summer birthday neon party may june july august" data-package-id="betty-confetti-neon-luxe-arch" data-package-name="Betty And Confetti - Neon Luxe Arch" data-package-category="Birthday" data-package-price="200" data-package-base-price="200" data-package-image="images/bandc25s.jpg" data-package-image2="images/added_bday.jpeg" data-package-summary="Luxury balloon arch with neon sign, marquee numbers, and layered backdrop styling for milestone birthdays.">
+                     <div class="package-media">
+                        <img src="{% static 'images/bandc25s.jpg' %}" alt="Betty Confetti Neon Luxe Arch">
+                        <span class="package-label"><i class="fa fa-gift" aria-hidden="true"></i>Birthday</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>Betty And Confetti - Neon Luxe Arch</h3>
+                        <span class="package-price">&pound;200</span>
+                     </div>
+                     <p class="package-summary">Luxury balloon arch with neon sign, marquee numbers, and layered backdrop styling for milestone birthdays.</p>
+                     <ul class="package-highlights"><li>Neon sign and marquee number styling</li><li>Luxury balloon arch</li><li>Layered backdrop feature wall</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="summer birthday car boot surprise may june july august" data-package-id="car-boot-luxe-boot-reveal" data-package-name="The Luxe Boot Reveal" data-package-category="Birthday" data-package-price="180" data-package-base-price="180" data-package-image="images/car_boot4.jpg" data-package-summary="The Luxe Boot Reveal.">
+                     <div class="package-media">
+                        <img src="{% static 'images/car_boot4.jpg' %}" alt="The Luxe Boot Reveal">
+                        <span class="package-label"><i class="fa fa-gift" aria-hidden="true"></i>Birthday</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>The Luxe Boot Reveal</h3>
+                        <span class="package-price">&pound;180</span>
+                     </div>
+                     <p class="package-summary">A clean surprise reveal with luxe boot styling and premium finishing.</p>
+                     <ul class="package-highlights"><li>Luxe boot styling</li><li>Premium surprise reveal finish</li><li>Photo-ready birthday presentation</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="anniversary romance autumn winter" data-package-id="anniversary-home-intimate-living-room-experience" data-package-name="The Intimate Living Room Experience" data-package-category="Anniversary" data-package-price="150" data-package-base-price="150" data-package-image="images/At_home1.jpg" data-package-summary="The Intimate Living Room Experience">
+                     <div class="package-media">
+                        <img src="{% static 'images/At_home1.jpg' %}" alt="The Intimate Living Room Experience">
+                        <span class="package-label"><i class="fa fa-heart-o" aria-hidden="true"></i>Anniversary</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>The Intimate Living Room Experience</h3>
+                        <span class="package-price">&pound;150</span>
+                     </div>
+                     <p class="package-summary">Warm at-home styling for a refined and personal celebration moment.</p>
+                     <ul class="package-highlights"><li>At-home anniversary styling</li><li>Warm romantic details</li><li>Refined reveal setting</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="anniversary romance autumn winter" data-package-id="anniversary-home-luxe-bedscape" data-package-name="The Anniversary Luxe Bedscape" data-package-category="Anniversary" data-package-price="140" data-package-base-price="140" data-package-image="images/At_home2.jpg" data-package-summary="The Anniversary Luxe Bedscape">
+                     <div class="package-media">
+                        <img src="{% static 'images/At_home2.jpg' %}" alt="The Anniversary Luxe Bedscape">
+                        <span class="package-label"><i class="fa fa-heart-o" aria-hidden="true"></i>Anniversary</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>The Anniversary Luxe Bedscape</h3>
+                        <span class="package-price">&pound;140</span>
+                     </div>
+                     <p class="package-summary">Romantic bedscape styling with balloons, florals, and soft details.</p>
+                     <ul class="package-highlights"><li>Bedroom reveal styling</li><li>Balloons, florals, and soft details</li><li>Romantic anniversary finish</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="valentine romance february winter" data-package-id="valentine-cupids-luxury-suite" data-package-name="The 'Cupid's Valentine' Luxury Suite" data-package-category="Occasion" data-package-price="170" data-package-base-price="170" data-package-image="images/val_3.jpg" data-package-summary="The 'Cupid's Valentine' Luxury Suite">
+                     <div class="package-media">
+                        <img src="{% static 'images/val_3.jpg' %}" alt="Cupid's Valentine Luxury Suite">
+                        <span class="package-label"><i class="fa fa-heart-o" aria-hidden="true"></i>Occasion</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>The 'Cupid's Valentine' Luxury Suite</h3>
+                        <span class="package-price">&pound;170</span>
+                     </div>
+                     <p class="package-summary">Romantic suite styling with rich seasonal detail and a luxe feel.</p>
+                     <ul class="package-highlights"><li>Luxury romantic suite styling</li><li>Seasonal Valentine detail</li><li>Premium reveal presentation</li></ul>
+                  </article>
+                  <article class="home-trending-card package-card" data-season="christmas festive december winter" data-package-id="christmas-dummy-1" data-package-name="Christmas Decorations Dummy Package 1" data-package-category="Festival" data-package-price="180" data-package-base-price="180" data-package-image="images/festive6.jpeg" data-package-summary="">
+                     <div class="package-media">
+                        <img src="{% static 'images/festive6.jpeg' %}" alt="Luxury Christmas Tree package">
+                        <span class="package-label"><i class="fa fa-gift" aria-hidden="true"></i>Festival</span>
+                     </div>
+                     <div class="package-card-top">
+                        <h3>Christmas Decorations Dummy Package 1</h3>
+                        <span class="package-price">&pound;180</span>
+                     </div>
+                     <p class="package-summary">Fully styled festive decor with a premium seasonal finish.</p>
+                     <ul class="package-highlights"><li>Festive seasonal styling</li><li>Premium Christmas finish</li><li>Styled decor feature</li></ul>
+                  </article>
+               </div>
+               <button class="home-trending-nav home-trending-nav--next" type="button" data-trending-next aria-label="Next trending packages">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+               </button>
+            </div>
+            <div class="home-trending-progress" data-trending-progress aria-label="Trending packages slider position"></div>
+         </div>
+      </section>
+
+      <section class="content_section home-featured">
+         <div class="container">
+            <div class="section_heading center_heading">
+               <span class="content_eyebrow"><i class="fa fa-th-large icon-inline" aria-hidden="true"></i>Featured Collections</span>
+               <h2 class="content_title">Our most booked celebration styles.</h2>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <article class="home-package-card">
+                     <button type="button" class="home-package-media home-package-lightbox-trigger" data-package-key="birthday" aria-label="Open Birthday Bliss images">
+                        <img src="{% static 'images/birthday_demo.jpg' %}" alt="Birthday bliss package">
+                     </button>
+                     <div class="home-package-body">
+                        <span class="blog_meta">Birthday</span>
+                        <h3>Birthday Bliss</h3>
+                        <p>Clean birthday decor and a polished reveal.</p>
+                        <div class="home-package-actions">
+                           <a href="{% url 'packages' %}?filter=birthday">View Collection</a>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <article class="home-package-card">
+                     <button type="button" class="home-package-media home-package-lightbox-trigger" data-package-key="anniversary" aria-label="Open Anniversary Glow images">
+                        <img src="{% static 'images/anniversary_demo.jpeg' %}" alt="Anniversary glow package">
+                     </button>
+                     <div class="home-package-body">
+                        <span class="blog_meta">Anniversary</span>
+                        <h3>Anniversary Glow</h3>
+                        <p>Elegant room styling for warm anniversary moments.</p>
+                        <div class="home-package-actions">
+                           <a href="{% url 'packages' %}?filter=anniversary">View Collection</a>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+               <div class="col-lg-4 col-md-6 mb-4">
+                  <article class="home-package-card">
+                     <button type="button" class="home-package-media home-package-lightbox-trigger" data-package-key="festival" aria-label="Open Festival Magic Set images">
+                        <img src="{% static 'images/christmas_demo.jpeg' %}" alt="Festival magic set">
+                     </button>
+                     <div class="home-package-body">
+                        <span class="blog_meta">Festival</span>
+                        <h3>Festival Magic Set</h3>
+                        <p>Seasonal decor and gifting with a clean finish.</p>
+                        <div class="home-package-actions">
+                           <a href="{% url 'packages' %}?filter=festival">View Collection</a>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="testimonial_section layout_padding">
+         <div class="container">
+            <div class="testimonial_section_2">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="testimonial_box">
+                        <div class="testimonial_intro">
+                           <h3 class="testimonial_title">What Clients Say</h3>
+                           <p class="testimonial_subtitle">Real client feedback.</p>
+                        </div>
+                        <div class="testimonial_avatar_bubble testimonial_avatar_bubble--left avatar-tone-one" aria-hidden="true"><i class="fa fa-user" aria-hidden="true"></i></div>
+                        <div class="testimonial_avatar_bubble testimonial_avatar_bubble--right avatar-tone-two" aria-hidden="true"><i class="fa fa-user" aria-hidden="true"></i></div>
+                        <div class="testimonial_motion_trail" aria-hidden="true"></div>
+                        <div class="testimonial_avatar_flyin avatar-tone-one" aria-hidden="true"><i class="fa fa-user" aria-hidden="true"></i></div>
+                        <div id="main_slider" class="carousel slide" data-ride="carousel">
+                           <div class="carousel-inner">
+                              <div class="carousel-item active" data-avatar-tone="one">
+                                 <div class="client_img avatar-tone-one"><img src="{% static 'images/first-testimony.jpeg' %}" alt="Client photo"></div>
+                                 <h4 class="client_name">Merabell</h4>
+                                 <p class="client_location">York, United Kingdom</p>
+                                 <div class="testimonial_rating" aria-label="4 out of 5 stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                 </div>
+                                 <p class="testimonial_text">From the moment I walked in, everything felt like a luxury movie set. The planning, details, and execution were flawless, and I felt truly celebrated. It was unforgettable.</p>
+                              </div>
+                              <div class="carousel-item" data-avatar-tone="two">
+                                 <div class="client_img avatar-tone-two"><i class="fa fa-user testimonial_user_icon" aria-hidden="true"></i></div>
+                                 <h4 class="client_name">Ada Kingsley</h4>
+                                 <p class="client_location">London, United Kingdom</p>
+                                 <div class="testimonial_rating" aria-label="4 out of 5 stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i> 
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                 </div>
+                                 <p class="testimonial_text">Classy setup, easy coordination, amazing reveal.</p>
+                              </div> 
+                              <div class="carousel-item" data-avatar-tone="three">
+                                 <div class="client_img avatar-tone-three"><i class="fa fa-user testimonial_user_icon" aria-hidden="true"></i></div>
+                                 <h4 class="client_name">Samuel Rivers</h4>
+                                 <p class="client_location">Manchester, United Kingdom</p>
+                                 <div class="testimonial_rating" aria-label="4 out of 5 stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                 </div>
+                                 <p class="testimonial_text">They nailed the mood and delivered on time.</p>
+                              </div>
+                           </div>
+                           <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev" aria-label="Previous testimonial"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                           <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next" aria-label="Next testimonial"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="testimonial_merabell_strip is-visible" aria-label="Merabell testimonial gallery">
+                           <button type="button" class="testimonial_merabell_thumb" data-testimonial-lightbox-index="0" aria-label="Open testimonial image 1">
+                              <img src="{% static 'images/testi1.jpeg' %}" alt="Merabell testimonial moment one">
+                           </button>
+                           <button type="button" class="testimonial_merabell_thumb" data-testimonial-lightbox-index="1" aria-label="Open testimonial image 2">
+                              <img src="{% static 'images/testi2.jpeg' %}" alt="Merabell testimonial moment two">
+                           </button>
+                           <button type="button" class="testimonial_merabell_thumb" data-testimonial-lightbox-index="2" aria-label="Open testimonial image 3">
+                              <img src="{% static 'images/testi3.jpeg' %}" alt="Merabell testimonial moment three">
+                           </button>
+                        </div>
+                        <div class="testimonial_merabell_progress" aria-label="Current testimonial image">
+                           <button type="button" class="testimonial_merabell_progress_dot is-active" data-testimonial-strip-index="0" aria-label="Show testimonial image 1"></button>
+                           <button type="button" class="testimonial_merabell_progress_dot" data-testimonial-strip-index="1" aria-label="Show testimonial image 2"></button>
+                           <button type="button" class="testimonial_merabell_progress_dot" data-testimonial-strip-index="2" aria-label="Show testimonial image 3"></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="modal fade testimonial-lightbox-modal" id="testimonial_lightbox" tabindex="-1" role="dialog" aria-labelledby="testimonial_lightbox_title" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="testimonial_lightbox_title">Merabell Gallery</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close gallery">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div id="testimonial_lightbox_slider" class="carousel slide" data-interval="false">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="{% static 'images/testi1.jpeg' %}" class="d-block w-100" alt="Merabell testimonial moment one full image">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="{% static 'images/testi2.jpeg' %}" class="d-block w-100" alt="Merabell testimonial moment two full image">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="{% static 'images/testi3.jpeg' %}" class="d-block w-100" alt="Merabell testimonial moment three full image">
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#testimonial_lightbox_slider" role="button" data-slide="prev" aria-label="Previous image">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     </a>
+                     <a class="carousel-control-next" href="#testimonial_lightbox_slider" role="button" data-slide="next" aria-label="Next image">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade testimonial-lightbox-modal package-lightbox-modal" id="package_lightbox" tabindex="-1" role="dialog" aria-labelledby="package_lightbox_title" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="package_lightbox_title">Featured Collections</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close package gallery">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div id="package_lightbox_slider" class="carousel slide" data-interval="false">
+                     <div class="carousel-inner"></div>
+                     <a class="carousel-control-prev" href="#package_lightbox_slider" role="button" data-slide="prev" aria-label="Previous package image">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     </a>
+                     <a class="carousel-control-next" href="#package_lightbox_slider" role="button" data-slide="next" aria-label="Next package image">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <section class="home-contact-cta">
+         <div class="container">
+            <div class="cta-panel">
+               <div>
+                  <span class="section-tag">Ready To Plan?</span>
+                  <h2>Plan your next celebration with BettyVerse.</h2>
+                  <p>Share your date and occasion. We handle the styling.</p>
+               </div>
+               <div class="cta-actions">
+                  <a class="hero-btn primary" href="{% url 'booking' %}">Contact Us</a>
+                  <a class="hero-btn secondary" href="{% url 'packages' %}">Browse Packages</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="site_footer margin_top90">
+         <div class="container">
+            <div class="footer_highlight_bar">
+               <div class="footer_highlight_item">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                  <div>
+                     <strong>Fast Setup Slots</strong>
+                     <span>Priority booking windows for last-minute celebrations.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <div>
+                     <strong>UK-Wide Coverage</strong>
+                     <span>From intimate home reveals to destination event styling.</span>
+                  </div>
+               </div>
+               <div class="footer_highlight_item">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  <div>
+                     <strong>Direct Support</strong>
+                     <span>Planning guidance from brief to final reveal timing.</span>
+                  </div>
+               </div>
+            </div>
+            <div class="footer_top">
+               <div class="footer_brand_column">
+                  <a class="footer_brand" href="{% url 'home' %}">
+                     <img src="{% static 'images/logo.png' %}" alt="BettyVerse logo">
+                     <span>BettyVerse</span>
+                  </a>
+                  <p class="footer_copy">Premium surprise styling, thoughtful gifting, and celebration planning for clients across the UK.</p>
+                  <p class="footer_service_note">Based in Dunfermline, Scotland and available for bookings anywhere in the UK.</p>
+                  <div class="footer_newsletter">
+                     <h3 class="footer_title">Newsletter</h3>
+                     <p class="footer_newsletter_copy">Subscribe for offers, styling trends, and new package launches.</p>
+                     <form class="footer_newsletter_form" method="post" novalidate>
+                              {% csrf_token %}
+                        <input type="email" class="footer_newsletter_input" placeholder="Enter your email address" aria-label="Email address">
+                        <button class="footer_newsletter_button" type="button">Subscribe</button>
+                     </form>
+                  </div>
+                  <div class="footer_social_links" aria-label="BettyVerse social links">
+                     <a href="https://www.tiktok.com/@bettyverse_" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.44h-3.2v12.58a2.77 2.77 0 1 1-1.9-2.63V8.96a5.98 5.98 0 1 0 5.1 5.91V8.5a8.02 8.02 0 0 0 4.68 1.5V6.69h-.91z"></path>
+                        </svg>
+                     </a>
+                     <a href="https://www.instagram.com/bettyverse_/" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.snapchat.com/add/bettyverse" target="_blank" rel="noopener noreferrer" aria-label="BettyVerse on Snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                  </div>               </div>
+               <div class="footer_links_column">
+                  <h3 class="footer_title">Useful Links</h3>
+                  <ul class="footer_links">
+                     <li><a href="{% url 'home' %}">Home</a></li>
+                     <li><a href="{% url 'packages' %}">Packages</a></li>
+                     <li><a href="{% url 'services' %}">Services</a></li>
+                     <li><a href="{% url 'booking' %}">Booking</a></li>
+                     <li><a href="{% url 'cart' %}">Cart</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Occasions</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="{% url 'packages' %}?filter=birthday">Birthday</a></li>
+                     <li><a href="{% url 'packages' %}?filter=anniversary">Anniversary</a></li>
+                     <li><a href="{% url 'packages' %}?filter=surprise">Proposal &amp; Surprise</a></li>
+                     <li><a href="{% url 'packages' %}?filter=festival">Festive Moments</a></li>
+                  </ul>
+               </div>
+               <div class="footer_contact_column">
+                  <h3 class="footer_title">Contact Details</h3>
+                  <ul class="footer_contact_list">
+                     <li><span>Address</span><strong>59 Don Road, Dunfermline, Scotland, UK</strong></li>
+                     <li><span>Postcode</span><strong>KY11 4NH</strong></li>
+                     <li><span>Phone</span><a href="tel:07467036297">07467036297</a></li>
+                  </ul>
+                  <h3 class="footer_title footer_title_secondary">Need Help?</h3>
+                  <ul class="footer_links footer_links_compact">
+                     <li><a href="{% url 'booking' %}">Book a Consultation</a></li>
+                     <li><a href="{% url 'blog' %}">Planning Tips</a></li>
+                     <li><a href="{% url 'about' %}">About BettyVerse</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_bottom">
+               <p class="copyright_text">2026 BettyVerse. Crafted for unforgettable celebrations.</p>
+               <ul class="footer_bottom_links">
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'services' %}">Services</a></li>
+                  <li><a href="{% url 'booking' %}">Booking</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/packages-inline.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/cart.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>
