@@ -101,25 +101,75 @@ WSGI_APPLICATION = 'bettyverse.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-DATABASE_URL = os.environ.get('DATABASE_URL')
+import shutil
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+
+
+def _clean_database_url(raw_url: str) -> str:
+    url = raw_url.strip().strip('"').strip("'")
+    if not url:
+        return ""
+    parts = urlsplit(url)
+    # Keep only standard libpq query parameters supported by psycopg2
+    allowed_params = {"sslmode", "connect_timeout", "application_name"}
+    filtered_query = [
+        (k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+        if k in allowed_params
+    ]
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(filtered_query), parts.fragment))
+
+
+def _get_sqlite_db_path() -> str:
+    source_db = os.path.join(BASE_DIR, "db.sqlite3")
+    if os.environ.get("VERCEL") or not os.access(BASE_DIR, os.W_OK):
+        tmp_db = "/tmp/db.sqlite3"
+        if not os.path.exists(tmp_db) and os.path.exists(source_db):
+            try:
+                shutil.copy2(source_db, tmp_db)
+            except Exception:
+                return source_db
+        return tmp_db
+    return source_db
+
+
+DATABASE_URL = (
+    os.environ.get("DATABASE_URL")
+    or os.environ.get("POSTGRES_URL")
+    or os.environ.get("POSTGRES_URL_NON_POOLING")
+    or os.environ.get("NEON_DATABASE_URL")
+    or os.environ.get("STORAGE_DATABASE_URL")
+    or ""
+).strip()
+
 if DATABASE_URL:
     try:
         import dj_database_url
-        DATABASES = {
-            'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600)
-        }
+
+        cleaned_url = _clean_database_url(DATABASE_URL)
+        db_config = dj_database_url.parse(
+            cleaned_url,
+            conn_max_age=0,
+            conn_health_checks=True,
+        )
+        host = str(db_config.get("HOST") or "").lower()
+        if host and host not in ("localhost", "127.0.0.1"):
+            options = dict(db_config.get("OPTIONS") or {})
+            options.setdefault("sslmode", "require")
+            options.setdefault("connect_timeout", 10)
+            db_config["OPTIONS"] = options
+        DATABASES = {"default": db_config}
     except Exception:
         DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            "default": {
+                "ENGINE": "django.db.backends.sqlite3",
+                "NAME": _get_sqlite_db_path(),
             }
         }
 else:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": _get_sqlite_db_path(),
         }
     }
 
@@ -205,4 +255,27 @@ STRIPE_PUBLISHABLE_KEY = os.getenv("STRIPE_PUBLISHABLE_KEY", "").strip()
 STRIPE_RESTRICTED_KEY = os.getenv("STRIPE_RESTRICTED_KEY", "").strip()
 STRIPE_WEBHOOK_SECRET = os.getenv("STRIPE_WEBHOOK_SECRET", "").strip()
 STRIPE_CURRENCY = os.getenv("STRIPE_CURRENCY", "gbp").strip().lower() or "gbp"
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console"],
+            "level": "ERROR",
+            "propagate": True,
+        },
+        "django.request": {
+            "handlers": ["console"],
+            "level": "ERROR",
+            "propagate": False,
+        },
+    },
+}
+
 

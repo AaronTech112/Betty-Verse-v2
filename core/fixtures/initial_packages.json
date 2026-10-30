@@ -1,0 +1,2393 @@
+[
+{
+  "model": "core.package",
+  "pk": 2,
+  "fields": {
+    "name": "Finding Nemo Inspired Package",
+    "category": "Birthday",
+    "base_price": "115.00",
+    "summary": "An underwater-themed birthday setup with Nemo character visuals, ocean-tone balloons, and a polished photo-ready stage...",
+    "image": "",
+    "image_url": "images/Nemo_inspired.jpg",
+    "status": "published",
+    "tags": "kids-birthday",
+    "created_at": "2026-05-05T15:30:03.022Z",
+    "updated_at": "2026-06-19T11:12:55.540Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 3,
+  "fields": {
+    "name": "Sofia The First Inspired",
+    "category": "Birthday",
+    "base_price": "145.00",
+    "summary": "A royal Sofia the First birthday setup with pastel luxury balloons, floral accents, and princess styling for a premium photo-ready celebration.....",
+    "image": "",
+    "image_url": "images/Sofia_themed_inspiration.jpeg",
+    "status": "published",
+    "tags": "kids-birthday",
+    "created_at": "2026-05-05T15:30:03.030Z",
+    "updated_at": "2026-06-19T11:12:35.008Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 4,
+  "fields": {
+    "name": "Mickey Mouse Themed",
+    "category": "Birthday",
+    "base_price": "175.00",
+    "summary": "A bold Mickey Mouse birthday setup with layered backdrop panels, multi-colour balloon styling, and character props designed for high-impact party photos.....",
+    "image": "",
+    "image_url": "images/Mickey_Themed.jpeg",
+    "status": "published",
+    "tags": "kids-birthday",
+    "created_at": "2026-05-05T15:30:03.034Z",
+    "updated_at": "2026-06-19T11:12:14.348Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 5,
+  "fields": {
+    "name": "Spider-Man Themed",
+    "category": "Birthday",
+    "base_price": "125.00",
+    "summary": "An action-packed Spider-Man birthday setup with red and blue luxury balloons, themed props, LED numbers, and a glossy photo-ready finish.......",
+    "image": "",
+    "image_url": "images/spider-Man themed.jpeg",
+    "status": "published",
+    "tags": "kids-birthday",
+    "created_at": "2026-05-05T15:30:03.039Z",
+    "updated_at": "2026-06-19T11:11:57.333Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 6,
+  "fields": {
+    "name": "SpongeBob Inspired",
+    "category": "Birthday",
+    "base_price": "145.00",
+    "summary": "A playful SpongeBob-inspired styling package with underwater visuals, pastel balloon architecture, and a premium setup finish for themed celebrations......",
+    "image": "",
+    "image_url": "images/SpongeBob_inspo.jpeg",
+    "status": "published",
+    "tags": "kids-birthday",
+    "created_at": "2026-05-05T15:30:03.044Z",
+    "updated_at": "2026-06-19T11:11:37.581Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 7,
+  "fields": {
+    "name": "Power-Puff Girls Inspired",
+    "category": "Birthday",
+    "base_price": "125.00",
+    "summary": "A vibrant Power-Puff Girls inspired package with signature color styling, character visuals, and polished setup details for statement celebrations.",
+    "image": "",
+    "image_url": "images/Power-Puff Girls Inspired.jpeg",
+    "status": "published",
+    "tags": "kids-birthday",
+    "created_at": "2026-05-05T15:30:03.050Z",
+    "updated_at": "2026-06-19T11:11:16.384Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 8,
+  "fields": {
+    "name": "Football Luxe Setup",
+    "category": "Birthday",
+    "base_price": "145.00",
+    "summary": "Premium blue, white, and silver balloon arch with LED number styling, football props, and custom backdrop lettering.",
+    "image": "",
+    "image_url": "images/banc7.jpeg",
+    "status": "published",
+    "tags": "betty-confetti",
+    "created_at": "2026-05-05T15:30:03.054Z",
+    "updated_at": "2026-06-19T11:10:52.330Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 9,
+  "fields": {
+    "name": "Hoop Essentials",
+    "category": "Birthday",
+    "base_price": "75.00",
+    "summary": "Gold hoop backdrop with luxe balloon clusters and custom number styling for intimate birthday celebrations.",
+    "image": "",
+    "image_url": "images/bandc20.jpg",
+    "status": "published",
+    "tags": "betty-confetti",
+    "created_at": "2026-05-05T15:30:03.056Z",
+    "updated_at": "2026-06-19T11:10:21.364Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 10,
+  "fields": {
+    "name": "Grand Luxe Balloon Arch",
+    "category": "Birthday",
+    "base_price": "205.00",
+    "summary": "Luxury balloon arch with neon sign, marquee numbers, and layered backdrop styling for milestone birthdays.\r\n\r\nFull luxury balloon arch (premium colours & metallic finishes)\r\n\r\n\r\nNeon \"Happy Birthday\" sign (warm glow)\r\n\r\n\r\nLight-up marquee numbers (age customisable)\r\n\r\nBackdrop panel/curtain styling\r\n\r\nProfessional setup & styling",
+    "image": "",
+    "image_url": "images/bandc25s.jpg",
+    "status": "published",
+    "tags": "betty-confetti",
+    "created_at": "2026-05-05T15:30:03.059Z",
+    "updated_at": "2026-06-19T11:09:32.250Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 11,
+  "fields": {
+    "name": "Luxe Marquee Package",
+    "category": "Birthday",
+    "base_price": "165.00",
+    "summary": "Premium milestone setup with marquee LED numbers, organic balloon arch, textured florals, and uplighting.\r\n\r\nMarquee Light-Up Numbers: Large 4ft LED numbers that provide a warm, ambient glow.\r\n\r\n\r\nOrganic Balloon Arch: A multi-layered garland using a mix of chrome, matte, and pearl finishes in varied sizes for a high-end \"organic\" look.\r\n\r\n\r\nTextured Florals: Dried pampas grass and dyed ruscus stems tucked into the balloons for added depth.\r\n\r\n\r\nProfessional Lighting: Ground-based uplights (PAR cans) to wash the walls in color and fairy light backdrops.\r\n\r\n\r\nPersonalized Touch: A bespoke neon sign or vinyl lettering on the wall/backdrop.",
+    "image": "",
+    "image_url": "images/bandc30.png",
+    "status": "published",
+    "tags": "betty-confetti",
+    "created_at": "2026-05-05T15:30:03.062Z",
+    "updated_at": "2026-06-19T11:09:03.591Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 12,
+  "fields": {
+    "name": "Royal Crimson Gala",
+    "category": "Birthday",
+    "base_price": "145.00",
+    "summary": "Bold crimson and gold celebration styling with organic balloons, giant foil numbers, and confetti reveal.\r\n\r\nRich Color Palette: Deep burgundy/crimson paired with reflective chrome gold balloons.\r\n\r\nIntegrated Foliage: Gold-sprayed palm spears and dried fan leaves for a modern, edgy aesthetic.\r\n\r\nFoil Balloon Accents: 18-inch circular foils with custom \"Crown\" or \"Happy Birthday\" vinyl prints.\r\n\r\n\r\nGiant Foil Numbers: Iconic gold numbers as the central anchor.\r\n\r\n\r\nConfetti Cannon: A coordinated gold confetti pop for the \"big reveal\" moment.",
+    "image": "",
+    "image_url": "images/bandc18.png",
+    "status": "published",
+    "tags": "betty-confetti",
+    "created_at": "2026-05-05T15:30:03.064Z",
+    "updated_at": "2026-06-19T11:08:42.787Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 13,
+  "fields": {
+    "name": "Sweet 16 Pillar Setup",
+    "category": "Birthday",
+    "base_price": "145.00",
+    "summary": "Soft luxe Sweet 16 design with dual balloon pillars, helium canopy, and centerpiece foil numbers.\r\n\r\nDual Balloon Pillars: Two floor-to-ceiling balloon columns accented with fresh-looking silk flowers (peonies/roses).\r\n\r\n\r\n\r\nCeiling Fill: A cluster of helium-filled balloons floating with metallic curling ribbons to create a \"canopy\" effect.\r\n\r\n\r\n\r\nCenterpiece Foils: Large 34-inch gold foil numbers positioned between the pillars.\r\n\r\n\r\n\r\nBunting/Backdrop: A high-quality \"Sweet 16\" cardstock banner or fabric drape.\r\n\r\n\r\n\r\nScattered Floor Balloons: A mix of air-filled balloons on the floor to tie the scene together.",
+    "image": "",
+    "image_url": "images/bandc16.png",
+    "status": "published",
+    "tags": "betty-confetti",
+    "created_at": "2026-05-05T15:30:03.067Z",
+    "updated_at": "2026-06-19T11:08:20.952Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 14,
+  "fields": {
+    "name": "The Grand Boot Celebration",
+    "category": "Birthday",
+    "base_price": "185.00",
+    "summary": "The Grand Boot Celebration\r\n\r\n\r\nFully styled balloon trunk setup\r\n\r\n\r\nCustom celebration banner\r\n\r\n\r\nFloral arrangement\r\n\r\n\r\nGift boxes with fairy lighting",
+    "image": "packages/car_boot3.jpg",
+    "image_url": "images/car_boo3.jpeg",
+    "status": "published",
+    "tags": "car-boot,anniversary-car",
+    "created_at": "2026-05-05T15:30:03.069Z",
+    "updated_at": "2026-06-19T11:08:00.927Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 15,
+  "fields": {
+    "name": "The Luxe Boot Reveal.",
+    "category": "Birthday",
+    "base_price": "185.00",
+    "summary": "The Luxe Boot Reveal.\r\n\r\nLED \"LOVE\" statement sign\r\n\r\nFairy light installation\r\n\r\nRose arrangements & petal detailing\r\n\r\nStyled gift boxes\r\n\r\n\r\nBalloon and teddy accents",
+    "image": "packages/IMG_3061.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "car-boot,valentine",
+    "created_at": "2026-05-05T15:30:03.073Z",
+    "updated_at": "2026-06-19T11:07:30.738Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 16,
+  "fields": {
+    "name": "The Ultimate Milestone Celebration",
+    "category": "Surprise",
+    "base_price": "190.00",
+    "summary": "The Ultimate Milestone Celebration\r\n\r\nVibrant dual-tone helium ceiling canopy\r\n\r\nLarge \"HAPPY BIRTHDAY\" wall-mounted foil lettering\r\n\r\nGiant life-sized plush teddy bear centerpiece\r\nDeluxe rose bouquet\r\n\r\nProfessional gift presentation and arrangement styling\r\n\r\nFoil heart and star balloon clusters",
+    "image": "",
+    "image_url": "images/suprise_uni1.jpg",
+    "status": "published",
+    "tags": "university",
+    "created_at": "2026-05-05T15:30:03.076Z",
+    "updated_at": "2026-06-19T11:06:58.981Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 17,
+  "fields": {
+    "name": "Basic Luxe Office Setup",
+    "category": "Surprise",
+    "base_price": "135.00",
+    "summary": "Basic Luxe Office Setup\r\n\"L-shaped\" organic balloon garland (hot pink, gold, and white)\r\n\r\nLarge \"HBD\" rose gold foil letter balloons\r\nDecorative gold butterfly accents throughout the balloons\r\n\r\nMatching desk-top balloon mini-cluster",
+    "image": "packages/IMG_3048.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "workplace",
+    "created_at": "2026-05-05T15:30:03.080Z",
+    "updated_at": "2026-06-19T11:06:31.457Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 18,
+  "fields": {
+    "name": "Corporate Balloon Arch Display",
+    "category": "Surprise",
+    "base_price": "180.00",
+    "summary": "Corporate Balloon Arch Display\r\n\r\nSolid arch backdrop panel in matte slate grey\r\nLarge organic balloon garland\r\nCustom vinyl lettering\r\nBalanced side-cluster balloon styling\r\nFull professional installation",
+    "image": "packages/workplace_bday3.jpg",
+    "image_url": "images/logo.png",
+    "status": "published",
+    "tags": "workplace",
+    "created_at": "2026-05-05T15:30:03.083Z",
+    "updated_at": "2026-06-19T11:06:07.792Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 19,
+  "fields": {
+    "name": "The Intimate Living Room Experience",
+    "category": "Anniversary",
+    "base_price": "155.00",
+    "summary": "The Intimate Living Room Experience\r\n\r\n\r\nCeiling balloon installation\r\nNeon romantic signage\r\nStyled table with candles & florals\r\nFloor balloon clusters\r\nAmbient lighting",
+    "image": "",
+    "image_url": "images/At_home1.jpg",
+    "status": "published",
+    "tags": "anniversary-home",
+    "created_at": "2026-05-05T15:30:03.086Z",
+    "updated_at": "2026-06-19T11:05:49.586Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 20,
+  "fields": {
+    "name": "The Anniversary Luxe Bedscape",
+    "category": "Anniversary",
+    "base_price": "145.00",
+    "summary": "The Anniversary Luxe Bedscape\r\n\r\nAnniversary balloon lettering\r\n\r\nHelium heart balloons\r\n\r\nBalloon-filled bed styling\r\n\r\nLED candles & rose petals",
+    "image": "",
+    "image_url": "images/At_home2.jpg",
+    "status": "published",
+    "tags": "anniversary-home",
+    "created_at": "2026-05-05T15:30:03.089Z",
+    "updated_at": "2026-06-19T11:04:43.427Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 21,
+  "fields": {
+    "name": "The Signature Balloon Feature",
+    "category": "Anniversary",
+    "base_price": "165.00",
+    "summary": "The Signature Balloon Feature\r\n\r\nOrganic balloon arrangement (premium tones & mixed sizes)\r\n\r\n\r\nLED/neon message feature\r\n\r\n\r\nDecorative accents (butterflies/metallics)\r\n\r\n\r\nStyled floor setup",
+    "image": "",
+    "image_url": "images/At_home3.jpg",
+    "status": "published",
+    "tags": "anniversary-home",
+    "created_at": "2026-05-05T15:30:03.092Z",
+    "updated_at": "2026-06-19T11:04:25.359Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 22,
+  "fields": {
+    "name": "The 'Say It With Love' Experience",
+    "category": "Occasion",
+    "base_price": "155.00",
+    "summary": "The 'Say It With Love' Experience\r\n\r\n Ceiling balloon installation with flowing ribbons\r\n\r\nCustom romantic message display\r\n\r\nRose petal-framed bed styling\r\n\r\nAccent balloons\r\n\r\nSoft ambient lighting",
+    "image": "packages/IMG_3049.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "valentine",
+    "created_at": "2026-05-05T15:30:03.094Z",
+    "updated_at": "2026-06-19T11:04:09.389Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 23,
+  "fields": {
+    "name": "The Romance Signature",
+    "category": "Occasion",
+    "base_price": "185.00",
+    "summary": "The Romance Signature\r\n\r\nFloating heart balloons (ceiling effect)\r\n\r\n\r\nElegant romantic lettering display\r\n\r\n\r\nRose petal bed styling\r\n\r\n\r\nWarm LED candle ambiance\r\n\r\n\r\nPlush teddy accent",
+    "image": "",
+    "image_url": "images/val_2.jpg",
+    "status": "published",
+    "tags": "valentine",
+    "created_at": "2026-05-05T15:30:03.098Z",
+    "updated_at": "2026-06-19T11:03:50.510Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 24,
+  "fields": {
+    "name": "The 'Cupid's Valentine' Luxury Suite",
+    "category": "Occasion",
+    "base_price": "175.00",
+    "summary": "The 'Cupid's Valentine' Luxury Suite\r\n\r\nWall-mounted \"HAPPY VALENTINE'S\" foil lettering\r\n\r\nFloating helium heart-shaped balloons\r\n\r\nElegant floor-standing heart balloon bouquet\r\n\r\nPremium long-stemmed rose bouquet\r\n\r\nScattered silk rose petals on linens\r\n\r\nFull professional installation",
+    "image": "",
+    "image_url": "images/val_3.jpg",
+    "status": "published",
+    "tags": "valentine",
+    "created_at": "2026-05-05T15:30:03.100Z",
+    "updated_at": "2026-06-19T11:03:28.117Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 25,
+  "fields": {
+    "name": "Deluxe “Baby Girl”",
+    "category": "Occasion",
+    "base_price": "150.00",
+    "summary": "Deluxe Baby Girl Celebration Display\r\n\r\n\r\nGrand Balloon Archway\r\n\r\nFringe Backdrop\r\n\r\nFoil Statement Balloons\r\n\r\nBase Balloon Clusters\r\n\r\nProfessional Styling & Full Setup",
+    "image": "",
+    "image_url": "images/baby_shower1.jpg",
+    "status": "published",
+    "tags": "baby-shower",
+    "created_at": "2026-05-05T15:30:03.104Z",
+    "updated_at": "2026-06-19T11:03:14.466Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 26,
+  "fields": {
+    "name": "The Blush Baby Luxe Celebration",
+    "category": "Occasion",
+    "base_price": "160.00",
+    "summary": "The Blush Baby Luxe Celebration\r\n\r\nFull organic balloon arch (pink & metallic tones).\r\n\r\nDraped backdrop for a soft luxury finish.\r\n\r\n\"BABY GIRL\" foil balloon lettering.\r\n\r\nStyled cake table setup",
+    "image": "",
+    "image_url": "images/baby_shower2.jpg",
+    "status": "published",
+    "tags": "baby-shower",
+    "created_at": "2026-05-05T15:30:03.107Z",
+    "updated_at": "2026-06-19T11:02:52.538Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 27,
+  "fields": {
+    "name": "The Little Prince Balloon Backdrop",
+    "category": "Occasion",
+    "base_price": "170.00",
+    "summary": "The Little Prince Balloon Backdrop.\r\n\r\nOrganic balloon garland (blue, white & chrome accents)\r\n\r\n\"BABY BOY\" foil balloon lettering\r\n\r\nStar-shaped foil balloons\r\n\r\nFloral and greenery accents\r\n\r\nStyled dessert table setup",
+    "image": "",
+    "image_url": "images/baby_shower3.jpg",
+    "status": "published",
+    "tags": "baby-shower",
+    "created_at": "2026-05-05T15:30:03.111Z",
+    "updated_at": "2026-06-19T11:02:25.674Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 29,
+  "fields": {
+    "name": "Luxury Christmas Tree",
+    "category": "Festival",
+    "base_price": "185.00",
+    "summary": "Fully styled Christmas tree\r\nStatement bow & ribbon cascade\r\nPremium ornaments & lighting\r\nFloor styling (gift boxes, candles, garlands)\r\nFull setup",
+    "image": "",
+    "image_url": "images/festive6.jpeg",
+    "status": "published",
+    "tags": "christmas",
+    "created_at": "2026-05-05T15:30:03.118Z",
+    "updated_at": "2026-06-19T11:01:54.867Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 30,
+  "fields": {
+    "name": "Luxury Festive Hallway",
+    "category": "Festival",
+    "base_price": "195.00",
+    "summary": "Festive Hallway Transformation\r\nCeiling draped garlands with warm lighting\r\nDecorative archway installation\r\nMini Christmas tree setup (pair)",
+    "image": "",
+    "image_url": "images/festive5.jpeg",
+    "status": "published",
+    "tags": "christmas",
+    "created_at": "2026-05-05T15:30:03.122Z",
+    "updated_at": "2026-06-19T11:01:06.005Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 31,
+  "fields": {
+    "name": "New Year Gold Luxe Theme",
+    "category": "Festival",
+    "base_price": "165.00",
+    "summary": "New Year Gold Luxe Theme.\r\n\r\n\r\nGold shimmer wall backdrop\r\nOrganic balloon garland (white, gold & blue tones)\r\n\"Happy New Year\" signage\r\nStyled cake table\r\nNumber balloons",
+    "image": "",
+    "image_url": "images/festive7.jpeg",
+    "status": "published",
+    "tags": "new-year",
+    "created_at": "2026-05-05T15:30:03.125Z",
+    "updated_at": "2026-06-19T11:00:37.499Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 32,
+  "fields": {
+    "name": "Modern Balloon Wall",
+    "category": "Festival",
+    "base_price": "135.00",
+    "summary": "Modern Balloon Wall Feature (Teal & Silver Theme)\r\n\r\nFull balloon wall installation\r\nMixed balloon sizes for depth\r\nStatement number balloons\r\nAccent props (disco balls, decor)",
+    "image": "",
+    "image_url": "images/festive8.jpeg",
+    "status": "published",
+    "tags": "new-year",
+    "created_at": "2026-05-05T15:30:03.129Z",
+    "updated_at": "2026-06-19T10:59:25.554Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 33,
+  "fields": {
+    "name": "Easter Bunny Balloon Display",
+    "category": "Festival",
+    "base_price": "165.00",
+    "summary": "Easter Bunny Balloon Display (Pastel Garden Theme)\r\n\r\nCustom bunny-ear backdrop panel\r\n\r\nOrganic balloon installation (pastel & vibrant mix, multiple sizes)\r\n\r\nRainbow feature prop for added dimension\r\n\r\nFloral-style balloon clusters\r\n\r\nFull setup and styling",
+    "image": "packages/festive3.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "easter",
+    "created_at": "2026-05-05T15:30:03.133Z",
+    "updated_at": "2026-06-19T10:58:45.411Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 34,
+  "fields": {
+    "name": "LED Cross",
+    "category": "Festival",
+    "base_price": "145.00",
+    "summary": "LED Cross Floral Feature Display (Luxury Faith Setup)\r\n\r\n\r\n\r\n\r\nLED illuminated cross\r\n\r\nDraped fabric styling\r\n\r\nPremium floral base arrangement\r\n\r\nGreenery & floor decor accents\r\n\r\nFull Setup",
+    "image": "",
+    "image_url": "images/festive2.jpeg",
+    "status": "published",
+    "tags": "easter",
+    "created_at": "2026-05-05T15:30:03.136Z",
+    "updated_at": "2026-06-19T10:58:27.034Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 35,
+  "fields": {
+    "name": "The Elegant Cross Balloon Feature",
+    "category": "Festival",
+    "base_price": "140.00",
+    "summary": "The Elegant Cross Balloon Feature.\r\n\r\nOrganic balloon arrangement (premium tones & mixed sizes)\r\n\r\nLED illuminated cross feature (statement centerpiece)\r\n\r\nDecorative florals and greenery accents\r\n\r\nFull professional setup",
+    "image": "",
+    "image_url": "images/festive1.jpeg",
+    "status": "published",
+    "tags": "easter",
+    "created_at": "2026-05-05T15:30:03.138Z",
+    "updated_at": "2026-06-19T10:57:49.824Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 37,
+  "fields": {
+    "name": "Corporate Balloon Arch Display 2",
+    "category": "Birthday",
+    "base_price": "140.00",
+    "summary": "Corporate Balloon Arch Display\r\n\r\n\r\nPremium balloon arch\r\n\r\nCenter signage area\r\n\r\nAccent balloon clusters\r\n\r\nProfessional styling",
+    "image": "packages/IMG_3051.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": null,
+    "created_at": "2026-06-03T07:05:01.515Z",
+    "updated_at": "2026-06-19T10:57:24.935Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 38,
+  "fields": {
+    "name": "Romantic Rose & Neon Dream",
+    "category": "Your Occasion",
+    "base_price": "170.00",
+    "summary": "Romantic Rose & Neon Dream\r\nMinimalist gold frame backdrop\r\nCascading organic balloon garland (red, pink, and rose gold tones)\r\n\"Will You Marry Me?\" neon sign center-piece\r\nCoordinated rose floral clusters integrated into the frame\r\nFloor styling with deep red rose petals and candles\r\nFull professional installation",
+    "image": "packages/IMG_3053.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "Proposal",
+    "created_at": "2026-06-03T07:46:48.235Z",
+    "updated_at": "2026-06-19T10:57:05.604Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 39,
+  "fields": {
+    "name": "Grand Skyline Proposal Marquee",
+    "category": "Occasion",
+    "base_price": "205.00",
+    "summary": "Grand Skyline Proposal Marquee\r\n\r\nLarge \"MARRY ME\" light-up marquee letters\r\nGiant circular metal arch with integrated fairy lights,\r\n\r\nFloor decor featuring rose petals and scattered gold baubles,\r\n\r\nAmbient candle package: glass cylinder vases and pillar candles,\r\n\r\nSymmetrical floral arrangements atop the marquee letters,\r\n\r\nFull professional installation",
+    "image": "packages/IMG_3054.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "Proposal",
+    "created_at": "2026-06-03T07:51:28.441Z",
+    "updated_at": "2026-06-19T10:55:15.975Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 41,
+  "fields": {
+    "name": "Safari Luxe Experience",
+    "category": "Birthday",
+    "base_price": "185.00",
+    "summary": "Transform your celebration into a breathtaking safari adventure with luxury jungle-themed event styling, premium balloons, safari props, warm ambient lighting, and elegant greenery.\r\n\r\n\r\nPerfect for Wild One birthdays, safari themes, luxury kids celebrations, and indoor event styling\r\nPremium organic balloon installations with ceiling balloons and hanging greenery vines.\r\n\r\n\r\nSafari-themed backdrop styling, luxury props, foliage decor, lanterns, candles, and personalised theme display.",
+    "image": "packages/IMG_3056.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "Kids-birthday",
+    "created_at": "2026-06-03T08:08:17.368Z",
+    "updated_at": "2026-06-19T10:50:28.775Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 42,
+  "fields": {
+    "name": "BettyVerse Uni Surprise Experience",
+    "category": "Surprise",
+    "base_price": "185.00",
+    "summary": "Celebrate your loved one’s special day with a beautifully styled university room surprise. The BettyVerse Uni Surprise Experience transforms a student room into a luxury birthday setup featuring floating ceiling balloons, personalised age balloons, heart balloons, and carefully arranged gifts for the ultimate birthday reveal.\r\n\r\nWhether you’re surprising a friend, sibling, partner, or university student away from home, this package creates a memorable moment they’ll cherish long after the celebrations end.",
+    "image": "packages/5da93269-e9ae-4ce6-a2ee-67b495e0f014.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "university",
+    "created_at": "2026-06-05T09:17:45.606Z",
+    "updated_at": "2026-06-19T10:48:12.307Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 43,
+  "fields": {
+    "name": "Red Roses",
+    "category": "Birthday",
+    "base_price": "15.00",
+    "summary": "Bright red roses",
+    "image": "packages/IMG_3115_sHn9SaY.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": null,
+    "created_at": "2026-06-06T13:58:44.325Z",
+    "updated_at": "2026-06-06T13:58:44.325Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 44,
+  "fields": {
+    "name": "Classic Gender Reveal Backdrop",
+    "category": "Occasion",
+    "base_price": "180.00",
+    "summary": "A stylish and affordable gender reveal setup featuring a personalised backdrop with luxury balloon styling in your chosen colours. Perfect for intimate indoor celebrations, home events, and memorable photo moments.\r\n\r\nIncludes: Backdrop panel, balloon garland, personalised wording, setup and collection.",
+    "image": "packages/a493422a-fc6f-4028-99fa-dbd096f55f21.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": null,
+    "created_at": "2026-06-21T22:54:50.170Z",
+    "updated_at": "2026-06-21T22:54:50.171Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 45,
+  "fields": {
+    "name": "Deluxe Gender Reveal Balloon Hoop",
+    "category": "Occasion",
+    "base_price": "220.00",
+    "summary": "Make your reveal extra special with our statement balloon hoop display. Featuring a luxury balloon arrangement and decorative styling, this package creates a stunning focal point for photos and celebrations.\r\n\r\nIncludes: Balloon hoop frame, premium balloon styling, setup and collection.",
+    "image": "packages/IMG_3399.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": null,
+    "created_at": "2026-06-21T22:58:07.157Z",
+    "updated_at": "2026-06-21T23:01:19.887Z"
+  }
+},
+{
+  "model": "core.package",
+  "pk": 46,
+  "fields": {
+    "name": "The Luxe Car Surprise Experience",
+    "category": "birthday",
+    "base_price": "80.00",
+    "summary": "Make their special moment unforgettable with BettyVerse Event Styling. Our luxury car decoration features a statement bow, elegant ribbons, a floral bouquet and coordinated balloons, perfect for birthdays, anniversaries, proposals and romantic surprises.\r\n\r\nPackage includes:\r\n\r\n* Luxury bonnet bow and ribbons\r\n* Coordinated balloon clusters\r\n* Floral bonnet arrangement\r\n* Custom colour theme\r\n* Professional setup",
+    "image": "packages/679022c5-91b8-4602-b29e-a50b74b5f39b.jpeg",
+    "image_url": null,
+    "status": "published",
+    "tags": "Birthday",
+    "created_at": "2026-10-21T00:53:14.701Z",
+    "updated_at": "2026-10-21T00:53:14.701Z"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 2,
+  "fields": {
+    "package": 2,
+    "name": "Grass flooring",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 3,
+  "fields": {
+    "package": 2,
+    "name": "Personalised name sign",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 4,
+  "fields": {
+    "package": 2,
+    "name": "LED number display",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 5,
+  "fields": {
+    "package": 2,
+    "name": "BettyVerse branded signage",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 6,
+  "fields": {
+    "package": 2,
+    "name": "Cake plinth display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 7,
+  "fields": {
+    "package": 2,
+    "name": "Extra balloon styling",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 8,
+  "fields": {
+    "package": 2,
+    "name": "Photographer",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 9,
+  "fields": {
+    "package": 3,
+    "name": "Personalised name sign",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 10,
+  "fields": {
+    "package": 3,
+    "name": "LED number display",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 11,
+  "fields": {
+    "package": 3,
+    "name": "Candy cart styling",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 12,
+  "fields": {
+    "package": 3,
+    "name": "Cake plinth display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 13,
+  "fields": {
+    "package": 3,
+    "name": "Private photographer",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 14,
+  "fields": {
+    "package": 4,
+    "name": "Personalised name sign",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 15,
+  "fields": {
+    "package": 4,
+    "name": "Additional LED numbers",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 16,
+  "fields": {
+    "package": 4,
+    "name": "Cake plinth display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 17,
+  "fields": {
+    "package": 4,
+    "name": "Extra balloon styling",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 18,
+  "fields": {
+    "package": 4,
+    "name": "Themed party favours setup",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 19,
+  "fields": {
+    "package": 4,
+    "name": "Private photographer",
+    "price": "80.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 20,
+  "fields": {
+    "package": 5,
+    "name": "Personalised name sign",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 21,
+  "fields": {
+    "package": 5,
+    "name": "Additional LED numbers",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 22,
+  "fields": {
+    "package": 5,
+    "name": "Cake plinth display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 23,
+  "fields": {
+    "package": 5,
+    "name": "Extra balloon styling",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 24,
+  "fields": {
+    "package": 5,
+    "name": "Themed party favours setup",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 25,
+  "fields": {
+    "package": 5,
+    "name": "Private photographer",
+    "price": "80.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 26,
+  "fields": {
+    "package": 6,
+    "name": "Personalised name sign",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 27,
+  "fields": {
+    "package": 6,
+    "name": "LED number upgrade",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 28,
+  "fields": {
+    "package": 6,
+    "name": "Cake plinth display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 29,
+  "fields": {
+    "package": 6,
+    "name": "Extra balloon styling",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 30,
+  "fields": {
+    "package": 6,
+    "name": "Private photographer",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 31,
+  "fields": {
+    "package": 7,
+    "name": "Personalised name sign",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 32,
+  "fields": {
+    "package": 7,
+    "name": "LED number upgrade",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 33,
+  "fields": {
+    "package": 7,
+    "name": "Character prop standees",
+    "price": "24.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 34,
+  "fields": {
+    "package": 7,
+    "name": "Cake plinth display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 35,
+  "fields": {
+    "package": 7,
+    "name": "Private photographer",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 36,
+  "fields": {
+    "package": 9,
+    "name": "Happy Birthday Foil Balloon",
+    "price": "10.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 37,
+  "fields": {
+    "package": 9,
+    "name": "Custom Name Decal (on hoop)",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 38,
+  "fields": {
+    "package": 9,
+    "name": "Extra Balloon Clusters (fuller look)",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 39,
+  "fields": {
+    "package": 9,
+    "name": "LED Lights (warm glow)",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 40,
+  "fields": {
+    "package": 10,
+    "name": "Custom Name Neon Sign",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 41,
+  "fields": {
+    "package": 10,
+    "name": "Ceiling drop down balloon",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 42,
+  "fields": {
+    "package": 11,
+    "name": "Personalized floor vinyl (e.g., Happy Birthday Sarah)",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 43,
+  "fields": {
+    "package": 11,
+    "name": "A bottle of chilled Prosecco with a coordinated ribbon.",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 44,
+  "fields": {
+    "package": 12,
+    "name": "A polaroid camera hire with 10 shots for guests to capture the night.",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 45,
+  "fields": {
+    "package": 12,
+    "name": "Satin birthday sash and tiara or king's crown prop.",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 46,
+  "fields": {
+    "package": 13,
+    "name": "A Surprise Box that, when opened, releases a personalized helium balloon.",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 47,
+  "fields": {
+    "package": 13,
+    "name": "A matching floral cake topper or a small bouquet.",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 48,
+  "fields": {
+    "package": 14,
+    "name": "Custom cake",
+    "price": "80.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 49,
+  "fields": {
+    "package": 14,
+    "name": "Personalized photo setup",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 50,
+  "fields": {
+    "package": 14,
+    "name": "Extra decor styling",
+    "price": "45.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 51,
+  "fields": {
+    "package": 15,
+    "name": "Personalized photo prints",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 52,
+  "fields": {
+    "package": 15,
+    "name": "Premium gift wrapping",
+    "price": "2.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 53,
+  "fields": {
+    "package": 15,
+    "name": "Extra florals or balloons",
+    "price": "45.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 54,
+  "fields": {
+    "package": 16,
+    "name": "Custom age foil number balloons",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 55,
+  "fields": {
+    "package": 16,
+    "name": "Luxury hamper of assorted treats",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 56,
+  "fields": {
+    "package": 16,
+    "name": "Personalized name bunting",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 57,
+  "fields": {
+    "package": 16,
+    "name": "Champagne and glassware setup",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 58,
+  "fields": {
+    "package": 17,
+    "name": "Extra butterfly embellishments",
+    "price": "10.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 59,
+  "fields": {
+    "package": 17,
+    "name": "Personalized helium star balloon",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 60,
+  "fields": {
+    "package": 17,
+    "name": "Custom vinyl message on balloons",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 61,
+  "fields": {
+    "package": 18,
+    "name": "Custom logo branding",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 62,
+  "fields": {
+    "package": 18,
+    "name": "Larger installations",
+    "price": "80.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 63,
+  "fields": {
+    "package": 18,
+    "name": "Plinths/display tables",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 64,
+  "fields": {
+    "package": 19,
+    "name": "Flower bouquet",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 65,
+  "fields": {
+    "package": 19,
+    "name": "Custom message sign",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 66,
+  "fields": {
+    "package": 19,
+    "name": "Extra balloons",
+    "price": "45.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 67,
+  "fields": {
+    "package": 20,
+    "name": "Neon signage",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 68,
+  "fields": {
+    "package": 20,
+    "name": "Fresh florals",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 69,
+  "fields": {
+    "package": 20,
+    "name": "Personalized message balloons",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 70,
+  "fields": {
+    "package": 21,
+    "name": "Custom signage",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 71,
+  "fields": {
+    "package": 21,
+    "name": "Additional balloon extensions",
+    "price": "45.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 72,
+  "fields": {
+    "package": 21,
+    "name": "LED numbers/letters",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 73,
+  "fields": {
+    "package": 22,
+    "name": "Neon sign upgrad",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 74,
+  "fields": {
+    "package": 22,
+    "name": "Polaroid photo display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 75,
+  "fields": {
+    "package": 22,
+    "name": "Floral bouquet",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 76,
+  "fields": {
+    "package": 23,
+    "name": "Fresh flower bouquet",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 77,
+  "fields": {
+    "package": 23,
+    "name": "Personalized message balloons",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 78,
+  "fields": {
+    "package": 23,
+    "name": "Extra candles & petals",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 79,
+  "fields": {
+    "package": 24,
+    "name": "Custom-made acrylic cake box",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 80,
+  "fields": {
+    "package": 24,
+    "name": "Personalized name vinyl on balloons",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 81,
+  "fields": {
+    "package": 24,
+    "name": "Chilled bottle of premium Champagne",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 82,
+  "fields": {
+    "package": 24,
+    "name": "Heart-shaped chocolate truffle box",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 83,
+  "fields": {
+    "package": 25,
+    "name": "Personalized Name Balloon",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 84,
+  "fields": {
+    "package": 25,
+    "name": "Cylindrical Plinths / Cake Stands",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 85,
+  "fields": {
+    "package": 25,
+    "name": "LED Baby Light-up Letters",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 87,
+  "fields": {
+    "package": 26,
+    "name": "Welcome board or signage",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 88,
+  "fields": {
+    "package": 26,
+    "name": "Enhanced dessert table styling",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 89,
+  "fields": {
+    "package": 27,
+    "name": "Personalized name balloons or signage",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 90,
+  "fields": {
+    "package": 27,
+    "name": "Full backdrop panel or draping",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 91,
+  "fields": {
+    "package": 27,
+    "name": "Additional balloon clusters",
+    "price": "45.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 96,
+  "fields": {
+    "package": 29,
+    "name": "Larger tree upgrade",
+    "price": "70.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 97,
+  "fields": {
+    "package": 29,
+    "name": "Custom colour theme",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 98,
+  "fields": {
+    "package": 29,
+    "name": "Fireplace styling",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 99,
+  "fields": {
+    "package": 29,
+    "name": "Extra decor pieces",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 100,
+  "fields": {
+    "package": 30,
+    "name": "Personalised welcome signage",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 101,
+  "fields": {
+    "package": 30,
+    "name": "Additional garland coverage",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 102,
+  "fields": {
+    "package": 30,
+    "name": "Premium oversized bows",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 103,
+  "fields": {
+    "package": 30,
+    "name": "Extra lighting enhancements",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 104,
+  "fields": {
+    "package": 31,
+    "name": "Custom year/message",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 105,
+  "fields": {
+    "package": 31,
+    "name": "Extra balloon styling",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 106,
+  "fields": {
+    "package": 31,
+    "name": "Dessert table setup",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 107,
+  "fields": {
+    "package": 31,
+    "name": "LED props/plinths",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 108,
+  "fields": {
+    "package": 32,
+    "name": "Custom signage",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 109,
+  "fields": {
+    "package": 32,
+    "name": "Extra themed props",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 110,
+  "fields": {
+    "package": 32,
+    "name": "Larger coverage",
+    "price": "70.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 111,
+  "fields": {
+    "package": 33,
+    "name": "Personalized name/message",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 112,
+  "fields": {
+    "package": 33,
+    "name": "Additional side clusters",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 113,
+  "fields": {
+    "package": 33,
+    "name": "Themed props/characters",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 114,
+  "fields": {
+    "package": 34,
+    "name": "Larger floral arrangements",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 115,
+  "fields": {
+    "package": 34,
+    "name": "Custom text/scripture signage",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 116,
+  "fields": {
+    "package": 34,
+    "name": "Candles/aisle styling",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 117,
+  "fields": {
+    "package": 35,
+    "name": "Personalized name or message sign",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 118,
+  "fields": {
+    "package": 35,
+    "name": "Additional balloon clusters or extensions",
+    "price": "45.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 119,
+  "fields": {
+    "package": 35,
+    "name": "LED number/letter lights",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 122,
+  "fields": {
+    "package": 37,
+    "name": "Custom logo branding",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 123,
+  "fields": {
+    "package": 37,
+    "name": "Larger installations",
+    "price": "80.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 124,
+  "fields": {
+    "package": 37,
+    "name": "Plinths/display tables",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 125,
+  "fields": {
+    "package": 38,
+    "name": "Personalized vinyl name decal",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 126,
+  "fields": {
+    "package": 38,
+    "name": "Balloon bouquet with heart accents",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 127,
+  "fields": {
+    "package": 38,
+    "name": "Professional LED up-lighting",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 128,
+  "fields": {
+    "package": 38,
+    "name": "Premium Real Touch floral upgrade",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 129,
+  "fields": {
+    "package": 39,
+    "name": "Personalized photo frames",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 130,
+  "fields": {
+    "package": 39,
+    "name": "Cold spark firework fountains (x2)",
+    "price": "80.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 131,
+  "fields": {
+    "package": 39,
+    "name": "Bottle of chilled Prosecco & flutes",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 132,
+  "fields": {
+    "package": 39,
+    "name": "Extra-wide rose petal carpet",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 137,
+  "fields": {
+    "package": 41,
+    "name": "Personalised name signage",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 138,
+  "fields": {
+    "package": 41,
+    "name": "LED marquee numbers",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 139,
+  "fields": {
+    "package": 41,
+    "name": "Luxury welcome sign",
+    "price": "35.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 140,
+  "fields": {
+    "package": 41,
+    "name": "Dessert / cake table styling",
+    "price": "60.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 141,
+  "fields": {
+    "package": 41,
+    "name": "Fresh florals upgrade",
+    "price": "50.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 142,
+  "fields": {
+    "package": 41,
+    "name": "Additional safari props",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 143,
+  "fields": {
+    "package": 41,
+    "name": "Soft play & kids seating",
+    "price": "120.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 144,
+  "fields": {
+    "package": 41,
+    "name": "Custom backdrop panel",
+    "price": "80.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 145,
+  "fields": {
+    "package": 26,
+    "name": "Custom name sign or neon light",
+    "price": "40.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 146,
+  "fields": {
+    "package": 42,
+    "name": "Fresh flower bouquet",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 147,
+  "fields": {
+    "package": 42,
+    "name": "Personalised photo display",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 148,
+  "fields": {
+    "package": 42,
+    "name": "Luxury teddy bear",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 149,
+  "fields": {
+    "package": 42,
+    "name": "Rose petals",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 150,
+  "fields": {
+    "package": 42,
+    "name": "LED candles",
+    "price": "10.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 151,
+  "fields": {
+    "package": 42,
+    "name": "Personalised name balloons",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 152,
+  "fields": {
+    "package": 43,
+    "name": "Premium packaging",
+    "price": "10.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 153,
+  "fields": {
+    "package": 44,
+    "name": "Teddy bear",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 154,
+  "fields": {
+    "package": 44,
+    "name": "BABY blocks",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 155,
+  "fields": {
+    "package": 44,
+    "name": "fresh florals",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 156,
+  "fields": {
+    "package": 45,
+    "name": "Teddy bear",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 157,
+  "fields": {
+    "package": 45,
+    "name": "BABY blocks",
+    "price": "15.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 158,
+  "fields": {
+    "package": 45,
+    "name": "personalised sign",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 159,
+  "fields": {
+    "package": 45,
+    "name": "additional balloons",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 160,
+  "fields": {
+    "package": 46,
+    "name": "Personalized balloon",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 161,
+  "fields": {
+    "package": 46,
+    "name": "Luxury teddy bear",
+    "price": "25.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 162,
+  "fields": {
+    "package": 46,
+    "name": "Chocolate gift box",
+    "price": "20.00"
+  }
+},
+{
+  "model": "core.addon",
+  "pk": 163,
+  "fields": {
+    "package": 46,
+    "name": "Premium flower bouquet",
+    "price": "30.00"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 22,
+  "fields": {
+    "package": 4,
+    "image": "packages/gallery/why_betty_PeSJAoy.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T16:48:08.257Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 23,
+  "fields": {
+    "package": 10,
+    "image": "packages/gallery/why_betty_826WOYB.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 1,
+    "created_at": "2026-05-31T16:56:32.301Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 24,
+  "fields": {
+    "package": 24,
+    "image": "packages/gallery/why_betty_9X1Ombq.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T17:03:16.041Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 25,
+  "fields": {
+    "package": 33,
+    "image": "packages/gallery/why_betty_YMXIkBT.png",
+    "image_url": "/images/why_betty.png",
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T17:27:28.974Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 26,
+  "fields": {
+    "package": 18,
+    "image": "packages/gallery/why_betty_2oGFzm9.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T17:41:44.104Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 27,
+  "fields": {
+    "package": 14,
+    "image": "packages/gallery/why_betty_X4ojQYS.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T00:11:32.729Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 28,
+  "fields": {
+    "package": 11,
+    "image": "packages/gallery/why_betty_J0krMgj.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 1,
+    "created_at": "2026-06-03T00:15:20.142Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 29,
+  "fields": {
+    "package": 19,
+    "image": "packages/gallery/IMG_3043.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T06:51:35.653Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 30,
+  "fields": {
+    "package": 17,
+    "image": "packages/gallery/IMG_3043_q7EPmsy.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T06:55:01.198Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 31,
+  "fields": {
+    "package": 22,
+    "image": "packages/gallery/IMG_3043_dRYZqmU.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T06:58:35.580Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 32,
+  "fields": {
+    "package": 37,
+    "image": "packages/gallery/IMG_3043_4eUhMR4.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:05:01.593Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 33,
+  "fields": {
+    "package": 31,
+    "image": "packages/gallery/IMG_3043_ke0EmFJ.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:24:31.605Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 34,
+  "fields": {
+    "package": 29,
+    "image": "packages/gallery/IMG_3052.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:34:31.766Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 35,
+  "fields": {
+    "package": 29,
+    "image": "packages/gallery/IMG_3043_fs2C0w6.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 1,
+    "created_at": "2026-06-03T07:34:31.830Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 36,
+  "fields": {
+    "package": 30,
+    "image": "packages/gallery/IMG_3043_rn0fxmy.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:37:12.993Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 37,
+  "fields": {
+    "package": 38,
+    "image": "packages/gallery/IMG_3043_uPzKps7.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:46:48.303Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 38,
+  "fields": {
+    "package": 39,
+    "image": "packages/gallery/IMG_3043_7zaj9Cj.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:51:28.510Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 40,
+  "fields": {
+    "package": 41,
+    "image": "packages/gallery/IMG_3057.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T08:08:17.399Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 41,
+  "fields": {
+    "package": 41,
+    "image": "packages/gallery/IMG_3043_u5egFbw.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T08:08:17.462Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 42,
+  "fields": {
+    "package": 26,
+    "image": "packages/gallery/IMG_3043_xc7uOUU.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T08:14:18.785Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 43,
+  "fields": {
+    "package": 15,
+    "image": "packages/gallery/IMG_3043_SPb5OB9.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:07:34.993Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 44,
+  "fields": {
+    "package": 16,
+    "image": "packages/gallery/IMG_3043_a0RMtjm.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:10:58.599Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 45,
+  "fields": {
+    "package": 21,
+    "image": "packages/gallery/IMG_3043_AzjuAIe.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:16:52.363Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 46,
+  "fields": {
+    "package": 23,
+    "image": "packages/gallery/IMG_3043_5r19vLp.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:19:17.366Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 47,
+  "fields": {
+    "package": 27,
+    "image": "packages/gallery/IMG_3043_GOzGISF.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:35:53.424Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 48,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/fe7abf6e-45a5-40d7-8758-312f0665a0d5.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.669Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 49,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/fb7090ef-4c70-4fd2-9274-d5655f5976b0.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.725Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 50,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/d70f75f7-2fbb-4870-83e1-43c6385f6830.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.755Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 51,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/IMG_3043_VHfZNpO.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.827Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 52,
+  "fields": {
+    "package": 43,
+    "image": "packages/gallery/IMG_3116_jN2NQrS.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-06T13:58:44.349Z"
+  }
+}
+]
