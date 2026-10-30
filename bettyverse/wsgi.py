@@ -29,10 +29,10 @@ def _ensure_database_ready():
             print("Initializing database schema via migrate...", file=sys.stderr)
             call_command("migrate", interactive=False, verbosity=1)
 
-        from core.models import Package
+        from core.models import Package, User
 
-        if not Package.objects.exists():
-            print("Seeding initial packages fixture...", file=sys.stderr)
+        if not Package.objects.exists() or not User.objects.filter(username="Betty").exists():
+            print("Seeding initial database records and users from fixture...", file=sys.stderr)
             call_command("loaddata", "initial_packages.json", verbosity=1)
     except Exception as exc:
         print(f"Database initialization warning: {exc}", file=sys.stderr)

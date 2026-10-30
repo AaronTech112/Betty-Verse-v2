@@ -1,5 +1,383 @@
 [
 {
+  "model": "core.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$NUpnLeKaCSMsRobGUUq1Yr$ok7wZkPPX5VALtV2G4rMMIhDVyj6smue/mhYMgwTJv8=",
+    "last_login": "2026-05-05T14:02:36.227Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@bettyverse.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-05T12:37:07.513Z",
+    "phone": null,
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$Oj8J6w9odyDKoRnHJLtHEZ$teYxIl+1bL8THslTL2b70cECcbO/BdixKZ2UKOtSF7w=",
+    "last_login": "2026-09-13T18:59:01.874Z",
+    "is_superuser": true,
+    "username": "aaron101",
+    "first_name": "",
+    "last_name": "",
+    "email": "aaron101@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-05T13:58:14.010Z",
+    "phone": null,
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 22,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$o4VMYPVxrqIpqsFA1VwgC8$WdreOfrbHj8v+HP8YaTtq2MMODLSewVXMD59WXOOyOM=",
+    "last_login": "2026-06-03T00:23:43.673Z",
+    "is_superuser": true,
+    "username": "aaronadmin",
+    "first_name": "",
+    "last_name": "",
+    "email": "aaronadmin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-29T06:21:39.012Z",
+    "phone": null,
+    "is_email_verified": false,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 24,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$yjFfZ6n2thTCwDrpdIPFUf$46SFI504C0l2lZgoj2/u8RiekYLQZmSap8V0p0rZlS8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "aaronabdullahi",
+    "first_name": "",
+    "last_name": "",
+    "email": "abdullahiaaron112@gmail.com",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": "2026-05-30T10:00:03.053Z",
+    "phone": "090615544",
+    "is_email_verified": false,
+    "email_verification_code": "751428",
+    "email_verification_sent_at": "2026-05-30T10:00:03.368Z",
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 25,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$V14ZU2kfydE3v46mERRrSb$FBXY/hrUKp+ePfcBChiH8bDR9FhYMPlj9aHOU8z0Rl0=",
+    "last_login": "2026-10-21T00:45:17.904Z",
+    "is_superuser": true,
+    "username": "Betty",
+    "first_name": "",
+    "last_name": "",
+    "email": "bettyverse2026@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-30T10:14:48Z",
+    "phone": null,
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": "",
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 26,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$4VKtSHYUcVfHYX3IDxwGhm$pSuMhMBdbX2ca5XV1PseCwLNyZiako0HS8HLqcLdcOs=",
+    "last_login": "2026-06-03T08:20:59.309Z",
+    "is_superuser": false,
+    "username": "Jordan",
+    "first_name": "",
+    "last_name": "",
+    "email": "jordanxavier684@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-03T08:20:22.566Z",
+    "phone": "",
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 27,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$41x9dT3KMs6G1V8KGTd0rF$GexQ8QPPITYlDvbShmwAAT6E+LCEVFuJH2VoCkURGoQ=",
+    "last_login": "2026-10-11T08:44:50.341Z",
+    "is_superuser": false,
+    "username": "Lizzy",
+    "first_name": "",
+    "last_name": "",
+    "email": "lizyohale@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-04T14:33:04.437Z",
+    "phone": "07467036297",
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 28,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$Rr0HctMPvmBWaCvRTHYOhF$OOetp9WP6ip4giGtIij8LzKaCocZxfz/Mopw18rs+J8=",
+    "last_login": "2026-06-06T13:22:08.674Z",
+    "is_superuser": false,
+    "username": "testgirl",
+    "first_name": "",
+    "last_name": "",
+    "email": "mjames1676@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-06T13:21:43.734Z",
+    "phone": "090525353535",
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 29,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$1Cv4KXypXBzZ35c3ujEP3Y$H1NPIwGvbAwt0ih+YVlKmc2GuLezFidGlvEESlUyf6c=",
+    "last_login": "2026-06-19T11:27:08.929Z",
+    "is_superuser": false,
+    "username": "Jane",
+    "first_name": "",
+    "last_name": "",
+    "email": "janeorji006@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-19T11:24:46.874Z",
+    "phone": "07069995337",
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 30,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$iZS3aZoSIAD38SDiytn5YD$LT6xYCKoiKdpvvmUgL8V5Q+o4bs9i+nayVnm8L5KL5U=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Saidegala",
+    "first_name": "",
+    "last_name": "",
+    "email": "saidegala321@gmail.com",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": "2026-10-08T08:33:07.383Z",
+    "phone": "07367497090",
+    "is_email_verified": false,
+    "email_verification_code": "765891",
+    "email_verification_sent_at": "2026-10-08T08:33:08.847Z",
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 32,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$aagtXYjaDogitEFVo4EXGv$so3EUcaWtjCFlaJ7ZYN9GaJ05duLhowfSysRdhEphIo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Stella",
+    "first_name": "",
+    "last_name": "",
+    "email": "richardstella560@gmail.com",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": "2026-10-11T08:56:07.706Z",
+    "phone": "07383260723",
+    "is_email_verified": false,
+    "email_verification_code": "288612",
+    "email_verification_sent_at": "2026-10-11T08:56:08.467Z",
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 36,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$A5l2LTuogq4WKVqAdBBmZV$6CRIf+ejhKAgySgR0wHwxcoFkQFaGrLq3SA59kFw2xM=",
+    "last_login": "2026-10-11T17:38:07.888Z",
+    "is_superuser": false,
+    "username": "gideonbus14@gmail.com",
+    "first_name": "",
+    "last_name": "",
+    "email": "gideonbus14@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-11T17:37:37.808Z",
+    "phone": "",
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 37,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$1asvEsVPqSvO9GI9xFmN1W$M+Dr7S5GMbz+c+BJjgDQT26JJ0WmUzSaDFfKVPUrD0A=",
+    "last_login": "2026-10-11T17:41:04.414Z",
+    "is_superuser": false,
+    "username": "Presh",
+    "first_name": "",
+    "last_name": "",
+    "email": "preciouspreshy769@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-11T17:40:09.828Z",
+    "phone": "07846789671",
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": null,
+    "notes": null,
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 38,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$GOpZ3NXpS41Qp7Xg3Wzrcb$0foEkb5DAlyi7JO/WE0frkokOabfAIb1ZeM8O+EiENk=",
+    "last_login": "2026-10-20T14:23:31.347Z",
+    "is_superuser": false,
+    "username": "Qix",
+    "first_name": "Qix",
+    "last_name": "",
+    "email": "qsixrich@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-20T14:21:43.871Z",
+    "phone": "07367677444",
+    "is_email_verified": true,
+    "email_verification_code": "",
+    "email_verification_sent_at": null,
+    "preferred_contact": "email",
+    "birthday": null,
+    "event_preferences": "",
+    "notes": "",
+    "tier": "Standard",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "core.package",
   "pk": 2,
   "fields": {
@@ -669,6 +1047,366 @@
     "tags": "Birthday",
     "created_at": "2026-10-21T00:53:14.701Z",
     "updated_at": "2026-10-21T00:53:14.701Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 22,
+  "fields": {
+    "package": 4,
+    "image": "packages/gallery/why_betty_PeSJAoy.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T16:48:08.257Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 23,
+  "fields": {
+    "package": 10,
+    "image": "packages/gallery/why_betty_826WOYB.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 1,
+    "created_at": "2026-05-31T16:56:32.301Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 24,
+  "fields": {
+    "package": 24,
+    "image": "packages/gallery/why_betty_9X1Ombq.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T17:03:16.041Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 25,
+  "fields": {
+    "package": 33,
+    "image": "packages/gallery/why_betty_YMXIkBT.png",
+    "image_url": "/images/why_betty.png",
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T17:27:28.974Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 26,
+  "fields": {
+    "package": 18,
+    "image": "packages/gallery/why_betty_2oGFzm9.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-05-31T17:41:44.104Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 27,
+  "fields": {
+    "package": 14,
+    "image": "packages/gallery/why_betty_X4ojQYS.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T00:11:32.729Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 28,
+  "fields": {
+    "package": 11,
+    "image": "packages/gallery/why_betty_J0krMgj.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 1,
+    "created_at": "2026-06-03T00:15:20.142Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 29,
+  "fields": {
+    "package": 19,
+    "image": "packages/gallery/IMG_3043.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T06:51:35.653Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 30,
+  "fields": {
+    "package": 17,
+    "image": "packages/gallery/IMG_3043_q7EPmsy.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T06:55:01.198Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 31,
+  "fields": {
+    "package": 22,
+    "image": "packages/gallery/IMG_3043_dRYZqmU.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T06:58:35.580Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 32,
+  "fields": {
+    "package": 37,
+    "image": "packages/gallery/IMG_3043_4eUhMR4.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:05:01.593Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 33,
+  "fields": {
+    "package": 31,
+    "image": "packages/gallery/IMG_3043_ke0EmFJ.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:24:31.605Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 34,
+  "fields": {
+    "package": 29,
+    "image": "packages/gallery/IMG_3052.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:34:31.766Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 35,
+  "fields": {
+    "package": 29,
+    "image": "packages/gallery/IMG_3043_fs2C0w6.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 1,
+    "created_at": "2026-06-03T07:34:31.830Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 36,
+  "fields": {
+    "package": 30,
+    "image": "packages/gallery/IMG_3043_rn0fxmy.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:37:12.993Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 37,
+  "fields": {
+    "package": 38,
+    "image": "packages/gallery/IMG_3043_uPzKps7.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:46:48.303Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 38,
+  "fields": {
+    "package": 39,
+    "image": "packages/gallery/IMG_3043_7zaj9Cj.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T07:51:28.510Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 40,
+  "fields": {
+    "package": 41,
+    "image": "packages/gallery/IMG_3057.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T08:08:17.399Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 41,
+  "fields": {
+    "package": 41,
+    "image": "packages/gallery/IMG_3043_u5egFbw.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T08:08:17.462Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 42,
+  "fields": {
+    "package": 26,
+    "image": "packages/gallery/IMG_3043_xc7uOUU.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T08:14:18.785Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 43,
+  "fields": {
+    "package": 15,
+    "image": "packages/gallery/IMG_3043_SPb5OB9.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:07:34.993Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 44,
+  "fields": {
+    "package": 16,
+    "image": "packages/gallery/IMG_3043_a0RMtjm.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:10:58.599Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 45,
+  "fields": {
+    "package": 21,
+    "image": "packages/gallery/IMG_3043_AzjuAIe.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:16:52.363Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 46,
+  "fields": {
+    "package": 23,
+    "image": "packages/gallery/IMG_3043_5r19vLp.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:19:17.366Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 47,
+  "fields": {
+    "package": 27,
+    "image": "packages/gallery/IMG_3043_GOzGISF.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-03T11:35:53.424Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 48,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/fe7abf6e-45a5-40d7-8758-312f0665a0d5.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.669Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 49,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/fb7090ef-4c70-4fd2-9274-d5655f5976b0.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.725Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 50,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/d70f75f7-2fbb-4870-83e1-43c6385f6830.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.755Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 51,
+  "fields": {
+    "package": 42,
+    "image": "packages/gallery/IMG_3043_VHfZNpO.png",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-05T09:17:45.827Z"
+  }
+},
+{
+  "model": "core.packageimage",
+  "pk": 52,
+  "fields": {
+    "package": 43,
+    "image": "packages/gallery/IMG_3116_jN2NQrS.jpeg",
+    "image_url": null,
+    "alt_text": "",
+    "sort_order": 0,
+    "created_at": "2026-06-06T13:58:44.349Z"
   }
 },
 {
@@ -2031,363 +2769,493 @@
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.newslettersubscriber",
+  "pk": 2,
+  "fields": {
+    "email": "ndeetheman.ab@gmail.com",
+    "user": 22,
+    "is_active": true,
+    "created_at": "2026-05-29T06:55:33.648Z",
+    "updated_at": "2026-05-29T06:55:33.648Z"
+  }
+},
+{
+  "model": "core.newslettersubscriber",
+  "pk": 3,
+  "fields": {
+    "email": "jordanxavier684@gmail.com",
+    "user": 26,
+    "is_active": true,
+    "created_at": "2026-06-03T16:01:08.303Z",
+    "updated_at": "2026-06-03T16:01:08.303Z"
+  }
+},
+{
+  "model": "core.newslettersubscriber",
+  "pk": 4,
+  "fields": {
+    "email": "gideonbus14@gmail.com",
+    "user": null,
+    "is_active": true,
+    "created_at": "2026-06-11T15:23:06.219Z",
+    "updated_at": "2026-06-11T15:23:06.220Z"
+  }
+},
+{
+  "model": "core.newslettersubscriber",
+  "pk": 5,
+  "fields": {
+    "email": "dtkoeueu@immenseignite.info",
+    "user": null,
+    "is_active": true,
+    "created_at": "2026-07-15T16:35:22.874Z",
+    "updated_at": "2026-07-15T16:35:22.874Z"
+  }
+},
+{
+  "model": "core.newslettersubscriber",
+  "pk": 6,
+  "fields": {
+    "email": "efpudkgo@formtests.info",
+    "user": null,
+    "is_active": true,
+    "created_at": "2026-09-22T02:33:33.283Z",
+    "updated_at": "2026-09-22T02:33:33.284Z"
+  }
+},
+{
+  "model": "core.newslettercampaign",
+  "pk": 1,
+  "fields": {
+    "subject": "Betty test",
+    "body": "welcome",
+    "sent_by": 22,
+    "recipient_count": 1,
+    "sent_at": "2026-05-29T06:25:29.400Z",
+    "created_at": "2026-05-29T06:25:26.228Z"
+  }
+},
+{
+  "model": "core.address",
+  "pk": 3,
+  "fields": {
+    "user": 27,
+    "label": "Home",
+    "recipient": "Lizzy",
+    "phone": "07467036297",
+    "line1": "59 Don Road",
+    "line2": "",
+    "city": "Dunfermline",
+    "region": "Dunfermline",
+    "postcode": "KY11 4NH",
+    "country": "Scotland, UK",
+    "is_default": true
+  }
+},
+{
+  "model": "core.booking",
+  "pk": 6,
+  "fields": {
+    "user": 27,
+    "full_name": "Lizzy",
+    "email": "lizyohale@gmail.com",
+    "phone": "07467036297",
+    "event_type": "Hu",
+    "event_datetime": "2026-06-28T02:44:00Z",
+    "theme": "Jjj",
+    "occasion_details": "Iuuj",
+    "special_requests": "Selected packages from cart:\r\n- Finding Nemo Inspired Package (£115.00)",
+    "property_type": "hotel",
+    "parking_availability": "yes",
+    "access_instructions": "",
+    "budget": null,
+    "photo_video_permission": true,
+    "inspiration_links": null,
+    "status": "approved",
+    "created_at": "2026-06-23T22:46:50.107Z"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 14,
+  "fields": {
+    "user": 4,
+    "booking": null,
+    "address": null,
+    "total_price": "110.00",
+    "status": "paid",
+    "created_at": "2026-05-05T16:22:29.230Z"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 15,
+  "fields": {
+    "user": 4,
+    "booking": null,
+    "address": null,
+    "total_price": "140.00",
+    "status": "paid",
+    "created_at": "2026-05-05T16:22:40.968Z"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 16,
+  "fields": {
+    "user": 4,
+    "booking": null,
+    "address": null,
+    "total_price": "420.00",
+    "status": "pending",
+    "created_at": "2026-05-05T16:44:49.892Z"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 21,
+  "fields": {
+    "user": 22,
+    "booking": null,
+    "address": null,
+    "total_price": "205.00",
+    "status": "pending",
+    "created_at": "2026-05-29T16:34:25.852Z"
+  }
+},
+{
+  "model": "core.order",
   "pk": 22,
   "fields": {
-    "package": 4,
-    "image": "packages/gallery/why_betty_PeSJAoy.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-05-31T16:48:08.257Z"
+    "user": 22,
+    "booking": null,
+    "address": null,
+    "total_price": "145.00",
+    "status": "pending",
+    "created_at": "2026-05-29T16:34:26.405Z"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 23,
-  "fields": {
-    "package": 10,
-    "image": "packages/gallery/why_betty_826WOYB.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 1,
-    "created_at": "2026-05-31T16:56:32.301Z"
-  }
-},
-{
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 24,
   "fields": {
-    "package": 24,
-    "image": "packages/gallery/why_betty_9X1Ombq.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-05-31T17:03:16.041Z"
+    "user": 25,
+    "booking": null,
+    "address": null,
+    "total_price": "290.00",
+    "status": "pending",
+    "created_at": "2026-05-30T10:15:29.043Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 25,
   "fields": {
-    "package": 33,
-    "image": "packages/gallery/why_betty_YMXIkBT.png",
-    "image_url": "/images/why_betty.png",
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-05-31T17:27:28.974Z"
+    "user": 26,
+    "booking": null,
+    "address": null,
+    "total_price": "180.00",
+    "status": "pending",
+    "created_at": "2026-06-03T08:21:01.701Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 26,
   "fields": {
-    "package": 18,
-    "image": "packages/gallery/why_betty_2oGFzm9.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-05-31T17:41:44.104Z"
+    "user": 27,
+    "booking": null,
+    "address": 3,
+    "total_price": "15.00",
+    "status": "paid",
+    "created_at": "2026-06-04T14:33:13.816Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 27,
   "fields": {
-    "package": 14,
-    "image": "packages/gallery/why_betty_X4ojQYS.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T00:11:32.729Z"
+    "user": 28,
+    "booking": null,
+    "address": null,
+    "total_price": "225.00",
+    "status": "pending",
+    "created_at": "2026-06-06T13:22:10.200Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 28,
   "fields": {
-    "package": 11,
-    "image": "packages/gallery/why_betty_J0krMgj.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 1,
-    "created_at": "2026-06-03T00:15:20.142Z"
+    "user": 29,
+    "booking": null,
+    "address": null,
+    "total_price": "0.00",
+    "status": "pending",
+    "created_at": "2026-06-19T11:27:10.772Z"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 29,
-  "fields": {
-    "package": 19,
-    "image": "packages/gallery/IMG_3043.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T06:51:35.653Z"
-  }
-},
-{
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 30,
   "fields": {
-    "package": 17,
-    "image": "packages/gallery/IMG_3043_q7EPmsy.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T06:55:01.198Z"
+    "user": 27,
+    "booking": 6,
+    "address": 3,
+    "total_price": "115.00",
+    "status": "pending",
+    "created_at": "2026-06-23T22:46:50.123Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 31,
   "fields": {
-    "package": 22,
-    "image": "packages/gallery/IMG_3043_dRYZqmU.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T06:58:35.580Z"
+    "user": 27,
+    "booking": null,
+    "address": null,
+    "total_price": "0.00",
+    "status": "pending",
+    "created_at": "2026-06-23T22:46:51.036Z"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 32,
-  "fields": {
-    "package": 37,
-    "image": "packages/gallery/IMG_3043_4eUhMR4.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T07:05:01.593Z"
-  }
-},
-{
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 33,
   "fields": {
-    "package": 31,
-    "image": "packages/gallery/IMG_3043_ke0EmFJ.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T07:24:31.605Z"
+    "user": 36,
+    "booking": null,
+    "address": null,
+    "total_price": "0.00",
+    "status": "pending",
+    "created_at": "2026-10-11T17:38:08.953Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 34,
   "fields": {
-    "package": 29,
-    "image": "packages/gallery/IMG_3052.jpeg",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T07:34:31.766Z"
+    "user": 37,
+    "booking": null,
+    "address": null,
+    "total_price": "190.00",
+    "status": "pending",
+    "created_at": "2026-10-11T17:41:05.704Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.order",
   "pk": 35,
   "fields": {
-    "package": 29,
-    "image": "packages/gallery/IMG_3043_fs2C0w6.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 1,
-    "created_at": "2026-06-03T07:34:31.830Z"
+    "user": 38,
+    "booking": null,
+    "address": null,
+    "total_price": "0.00",
+    "status": "pending",
+    "created_at": "2026-10-20T14:22:18.443Z"
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.orderitem",
+  "pk": 16,
+  "fields": {
+    "order": 14,
+    "package": 2,
+    "price": "110.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 17,
+  "fields": {
+    "order": 15,
+    "package": 3,
+    "price": "140.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 20,
+  "fields": {
+    "order": 16,
+    "package": 3,
+    "price": "140.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 21,
+  "fields": {
+    "order": 16,
+    "package": 4,
+    "price": "170.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 16,
+    "package": 2,
+    "price": "110.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 26,
+  "fields": {
+    "order": 21,
+    "package": 2,
+    "price": "110.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 27,
+  "fields": {
+    "order": 22,
+    "package": 5,
+    "price": "120.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 33,
+  "fields": {
+    "order": 25,
+    "package": 42,
+    "price": "180.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 34,
+  "fields": {
+    "order": 27,
+    "package": 3,
+    "price": "140.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
   "pk": 36,
   "fields": {
-    "package": 30,
-    "image": "packages/gallery/IMG_3043_rn0fxmy.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T07:37:12.993Z"
+    "order": 26,
+    "package": 43,
+    "price": "15.00",
+    "quantity": 1
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 37,
-  "fields": {
-    "package": 38,
-    "image": "packages/gallery/IMG_3043_uPzKps7.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T07:46:48.303Z"
-  }
-},
-{
-  "model": "core.packageimage",
+  "model": "core.orderitem",
   "pk": 38,
   "fields": {
-    "package": 39,
-    "image": "packages/gallery/IMG_3043_7zaj9Cj.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T07:51:28.510Z"
+    "order": 30,
+    "package": 2,
+    "price": "115.00",
+    "quantity": 1
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.orderitem",
+  "pk": 39,
+  "fields": {
+    "order": 24,
+    "package": 2,
+    "price": "115.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "core.orderitem",
   "pk": 40,
   "fields": {
-    "package": 41,
-    "image": "packages/gallery/IMG_3057.jpeg",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T08:08:17.399Z"
+    "order": 24,
+    "package": 4,
+    "price": "175.00",
+    "quantity": 1
   }
 },
 {
-  "model": "core.packageimage",
+  "model": "core.orderitem",
   "pk": 41,
   "fields": {
-    "package": 41,
-    "image": "packages/gallery/IMG_3043_u5egFbw.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T08:08:17.462Z"
-  }
-},
-{
-  "model": "core.packageimage",
-  "pk": 42,
-  "fields": {
-    "package": 26,
-    "image": "packages/gallery/IMG_3043_xc7uOUU.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T08:14:18.785Z"
-  }
-},
-{
-  "model": "core.packageimage",
-  "pk": 43,
-  "fields": {
-    "package": 15,
-    "image": "packages/gallery/IMG_3043_SPb5OB9.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T11:07:34.993Z"
-  }
-},
-{
-  "model": "core.packageimage",
-  "pk": 44,
-  "fields": {
+    "order": 34,
     "package": 16,
-    "image": "packages/gallery/IMG_3043_a0RMtjm.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T11:10:58.599Z"
+    "price": "190.00",
+    "quantity": 1
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 45,
+  "model": "core.orderitemaddon",
+  "pk": 31,
   "fields": {
-    "package": 21,
-    "image": "packages/gallery/IMG_3043_AzjuAIe.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T11:16:52.363Z"
+    "order_item": 26,
+    "addon": 3,
+    "price": "25.00"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 46,
+  "model": "core.orderitemaddon",
+  "pk": 32,
   "fields": {
-    "package": 23,
-    "image": "packages/gallery/IMG_3043_5r19vLp.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T11:19:17.366Z"
+    "order_item": 26,
+    "addon": 4,
+    "price": "20.00"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 47,
+  "model": "core.orderitemaddon",
+  "pk": 33,
   "fields": {
-    "package": 27,
-    "image": "packages/gallery/IMG_3043_GOzGISF.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-03T11:35:53.424Z"
+    "order_item": 26,
+    "addon": 5,
+    "price": "20.00"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 48,
+  "model": "core.orderitemaddon",
+  "pk": 34,
   "fields": {
-    "package": 42,
-    "image": "packages/gallery/fe7abf6e-45a5-40d7-8758-312f0665a0d5.jpeg",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-05T09:17:45.669Z"
+    "order_item": 26,
+    "addon": 7,
+    "price": "30.00"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 49,
+  "model": "core.orderitemaddon",
+  "pk": 35,
   "fields": {
-    "package": 42,
-    "image": "packages/gallery/fb7090ef-4c70-4fd2-9274-d5655f5976b0.jpeg",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-05T09:17:45.725Z"
+    "order_item": 27,
+    "addon": 20,
+    "price": "25.00"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 50,
+  "model": "core.orderitemaddon",
+  "pk": 37,
   "fields": {
-    "package": 42,
-    "image": "packages/gallery/d70f75f7-2fbb-4870-83e1-43c6385f6830.jpeg",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-05T09:17:45.755Z"
+    "order_item": 34,
+    "addon": 12,
+    "price": "25.00"
   }
 },
 {
-  "model": "core.packageimage",
-  "pk": 51,
+  "model": "core.orderitemaddon",
+  "pk": 38,
   "fields": {
-    "package": 42,
-    "image": "packages/gallery/IMG_3043_VHfZNpO.png",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-05T09:17:45.827Z"
-  }
-},
-{
-  "model": "core.packageimage",
-  "pk": 52,
-  "fields": {
-    "package": 43,
-    "image": "packages/gallery/IMG_3116_jN2NQrS.jpeg",
-    "image_url": null,
-    "alt_text": "",
-    "sort_order": 0,
-    "created_at": "2026-06-06T13:58:44.349Z"
+    "order_item": 34,
+    "addon": 13,
+    "price": "60.00"
   }
 }
 ]
