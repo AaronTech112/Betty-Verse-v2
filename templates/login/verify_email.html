@@ -50,7 +50,7 @@
                     {{ form.code.errors }}
                 </div>
                 <button type="submit" class="btn">Verify Email</button>
-                <button type="submit" class="btn" name="action" value="resend">Resend Code</button>
+                <button type="submit" class="btn" name="action" value="resend" formnovalidate>Resend Code</button>
                 <p class="switch-text">Already verified? <a href="{% url 'login' %}">Log in instead</a></p>
             </form>
         </div>

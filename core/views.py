@@ -692,6 +692,26 @@ class SignUpView(CreateView):
             return redirect('dashboard')
         return super().dispatch(request, *args, **kwargs)
 
+    def post(self, request, *args, **kwargs):
+        self.object = None
+        email = str(request.POST.get("email") or "").strip().lower()
+        username = str(request.POST.get("username") or "").strip()
+        if email or username:
+            existing_unverified = (
+                User.objects.filter(email__iexact=email, is_email_verified=False).first()
+                if email
+                else None
+            ) or (
+                User.objects.filter(username__iexact=username, is_email_verified=False).first()
+                if username
+                else None
+            )
+            if existing_unverified:
+                form = CustomUserCreationForm(request.POST, instance=existing_unverified)
+                if form.is_valid():
+                    return self.form_valid(form)
+        return super().post(request, *args, **kwargs)
+
     def form_valid(self, form):
         self.object = form.save(commit=False)
         self.object.email = self.object.email.strip().lower()
@@ -704,13 +724,15 @@ class SignUpView(CreateView):
         try:
             _send_email_verification_code(self.object)
             messages.success(self.request, "We sent a verification code to your email address.")
-        except Exception:
+        except Exception as exc:
+            print(f"Email verification send error: {exc}", flush=True)
             messages.error(
                 self.request,
                 "Your account was created, but we could not send the verification code right now. Please try resending it.",
             )
 
-        return redirect("verify_email")
+        query = urlencode({"email": self.object.email})
+        return redirect(f"{reverse('verify_email')}?{query}")
 
     def form_invalid(self, form):
         messages.error(self.request, "Please correct the highlighted errors and try again.")
@@ -809,7 +831,12 @@ class CustomLoginView(LoginView):
         pending_user = User.objects.filter(email__iexact=attempted_email, is_email_verified=False).first()
         if pending_user:
             self.request.session["pending_verification_user_id"] = pending_user.id
-            messages.info(self.request, "Please verify your email address before logging in.")
+            try:
+                _send_email_verification_code(pending_user)
+                messages.info(self.request, "Please verify your email address before logging in. We just sent you a fresh verification code.")
+            except Exception as exc:
+                print(f"Login verification code send error: {exc}", flush=True)
+                messages.info(self.request, "Please verify your email address before logging in.")
             return redirect(f"{reverse('verify_email')}?email={pending_user.email}")
         messages.error(self.request, "Invalid email or password.")
         return super().form_invalid(form)

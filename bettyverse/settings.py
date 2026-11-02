@@ -245,9 +245,17 @@ EMAIL_BACKEND = 'core.backends.CertifiSMTPEmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_TIMEOUT = 20
-EMAIL_HOST_USER = os.environ.get('BETTYVERSE_EMAIL_HOST_USER', '')
-EMAIL_HOST_PASSWORD = os.environ.get('BETTYVERSE_EMAIL_HOST_PASSWORD', '')
+EMAIL_TIMEOUT = 10
+EMAIL_HOST_USER = (
+    os.environ.get('BETTYVERSE_EMAIL_HOST_USER')
+    or os.environ.get('EMAIL_HOST_USER')
+    or 'Bettyverse2026@gmail.com'
+).strip().strip('"').strip("'")
+EMAIL_HOST_PASSWORD = (
+    os.environ.get('BETTYVERSE_EMAIL_HOST_PASSWORD')
+    or os.environ.get('EMAIL_HOST_PASSWORD')
+    or 'uyea droh ltkt tqlt'
+).strip().strip('"').strip("'")
 DEFAULT_FROM_EMAIL = f'BettyVerse <{EMAIL_HOST_USER}>' if EMAIL_HOST_USER else 'BettyVerse <noreply@bettyverse.com>'
 PASSWORD_RESET_BASE_URL = os.getenv("BETTYVERSE_PUBLIC_BASE_URL", "").strip().rstrip("/")
 
