@@ -163,3 +163,16 @@ class OrderItemAddOn(models.Model):
     order_item = models.ForeignKey(OrderItem, on_delete=models.CASCADE, related_name='selected_addons')
     addon = models.ForeignKey(AddOn, on_delete=models.SET_NULL, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
+
+
+class MediaFile(models.Model):
+    """Stores uploaded media binaries in the database for read-only serverless runtimes (Vercel)."""
+
+    name = models.CharField(max_length=500, unique=True)
+    content = models.BinaryField()
+    content_type = models.CharField(max_length=255, default="application/octet-stream")
+    size = models.PositiveIntegerField(default=0)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name

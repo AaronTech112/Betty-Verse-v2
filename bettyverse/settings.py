@@ -41,6 +41,9 @@ ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
     'https://*.vercel.app',
     'https://*.now.sh',
+    'https://bettyverse.co.uk',
+    'https://www.bettyverse.co.uk',
+    'https://*.bettyverse.co.uk',
     'http://127.0.0.1',
     'http://localhost',
 ]
@@ -225,7 +228,7 @@ MEDIA_ROOT = BASE_DIR
 
 STORAGES = {
     "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        "BACKEND": "core.storage.DatabaseMediaStorage",
     },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
@@ -260,10 +263,19 @@ DEFAULT_FROM_EMAIL = f'BettyVerse <{EMAIL_HOST_USER}>' if EMAIL_HOST_USER else '
 PASSWORD_RESET_BASE_URL = os.getenv("BETTYVERSE_PUBLIC_BASE_URL", "").strip().rstrip("/")
 
 # Stripe settings (fill from your client's Stripe account credentials or environment variables).
-STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY", "").strip()
-STRIPE_PUBLISHABLE_KEY = os.getenv("STRIPE_PUBLISHABLE_KEY", "").strip()
-STRIPE_RESTRICTED_KEY = os.getenv("STRIPE_RESTRICTED_KEY", "").strip()
-STRIPE_WEBHOOK_SECRET = os.getenv("STRIPE_WEBHOOK_SECRET", "").strip()
+STRIPE_SECRET_KEY = (
+    os.getenv("STRIPE_SECRET_KEY")
+    or os.getenv("STRIPE_API_KEY")
+    or os.getenv("STRIPE_RESTRICTED_KEY")
+    or ""
+).strip().strip('"').strip("'")
+STRIPE_PUBLISHABLE_KEY = (
+    os.getenv("STRIPE_PUBLISHABLE_KEY")
+    or os.getenv("NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY")
+    or ""
+).strip().strip('"').strip("'")
+STRIPE_RESTRICTED_KEY = os.getenv("STRIPE_RESTRICTED_KEY", "").strip().strip('"').strip("'")
+STRIPE_WEBHOOK_SECRET = os.getenv("STRIPE_WEBHOOK_SECRET", "").strip().strip('"').strip("'")
 STRIPE_CURRENCY = os.getenv("STRIPE_CURRENCY", "gbp").strip().lower() or "gbp"
 
 LOGGING = {
